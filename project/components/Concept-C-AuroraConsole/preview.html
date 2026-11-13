@@ -1,0 +1,191 @@
+<!-- @dsCard group="Concepts" height=700 width=760 subtitle="Opulent maximalism — dense layered glass, violet + cyan glow, retro console readouts" -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Lucent — Concept C: Aurora Console</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap">
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; }
+  body {
+    background: var(--surface-base);
+    color: var(--ink);
+    font-family: var(--font-sans);
+    padding: var(--space-6);
+    min-height: 700px;
+    overflow: hidden;
+  }
+  .lc-c-topbar { display: flex; align-items: center; justify-content: space-between; margin-bottom: var(--space-5); position: relative; z-index: 4; }
+  .lc-c-mark { letter-spacing: 0.08em; color: var(--ink-muted); }
+
+  .lc-c-toggle {
+    appearance: none; border: none; cursor: pointer;
+    width: 56px; height: 30px; border-radius: var(--radius-full);
+    background: var(--surface-control); backdrop-filter: blur(var(--blur-sm)); -webkit-backdrop-filter: blur(var(--blur-sm));
+    
+    position: relative; padding: 0; flex: none;
+    box-shadow: none;
+  }
+  .lc-c-toggle .knob {
+    position: absolute; top: 3px; left: 3px; width: 24px; height: 24px;
+    border-radius: var(--radius-full); background: var(--surface-raised);
+    box-shadow: var(--shadow-raised-md); transition: transform 180ms ease, box-shadow 180ms ease;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .lc-c-toggle.is-dark .knob { transform: translateX(26px); box-shadow: var(--shadow-raised-md); }
+  .lc-c-toggle .knob::after { content: ""; width: 8px; height: 8px; border-radius: var(--radius-full); background: var(--accent-c); }
+  .lc-c-toggle:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 3px; }
+
+  .lc-c-scene { position: relative; height: 580px; border-radius: var(--radius-xl); overflow: hidden; }
+
+  .lc-c-glow {
+    position: absolute; inset: -60px; z-index: 0;
+    background:
+      radial-gradient(420px 300px at 20% 10%, var(--accent-c-glow) 0%, transparent 65%),
+      radial-gradient(360px 280px at 90% 30%, var(--accent-b) 0%, transparent 60%);
+    opacity: var(--opacity-glass-subtle);
+    filter: blur(var(--blur-lg));
+    transition: transform 120ms ease-out;
+    pointer-events: none;
+  }
+  .lc-c-scanlines {
+    position: absolute; inset: 0; z-index: 1; pointer-events: none;
+    background-image: repeating-linear-gradient(to bottom, var(--ink-950) 0 1px, transparent 1px 3px);
+    opacity: 0.035;
+  }
+
+  .lc-c-shell {
+    position: relative; z-index: 2; height: 100%;
+    background: var(--glass-surface-strong); backdrop-filter: blur(var(--blur-lg)); -webkit-backdrop-filter: blur(var(--blur-lg));
+    
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-raised-lg);
+    padding: var(--space-6);
+    transition: transform 120ms ease-out;
+  }
+
+  .lc-c-shell-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: var(--space-5); }
+  .lc-c-pill { display: inline-flex; align-items: center; gap: var(--space-1); padding: var(--space-1) var(--space-3); border-radius: var(--radius-full); }
+  .lc-c-pill.live { background: var(--glass-surface); border: 1px solid var(--accent-c); color: var(--accent-c); }
+  .lc-c-pill.sync { background: var(--glass-surface); border: 1px solid var(--accent-b); color: var(--accent-b); margin-left: var(--space-2); }
+  .lc-c-pill .dot { width: 6px; height: 6px; border-radius: var(--radius-full); background: currentColor; }
+
+  .lc-c-readout { margin: var(--space-5) 0 var(--space-6); }
+  .lc-c-readout .value { margin: 0; color: var(--ink); text-shadow: 0 0 24px var(--accent-c-glow); }
+  .lc-c-readout .unit { margin: var(--space-1) 0 0; color: var(--ink-muted); }
+
+  .lc-c-dials { display: flex; gap: var(--space-6); margin-bottom: var(--space-6); }
+  .lc-c-dial { width: 64px; height: 64px; border-radius: var(--radius-full); background: var(--surface-raised); box-shadow: var(--shadow-raised-md); position: relative; flex: none; }
+  .lc-c-dial .pointer { position: absolute; top: 8px; left: 50%; width: 2px; height: 18px; background: var(--accent-c); transform-origin: 50% 24px; border-radius: var(--radius-full); }
+  .lc-c-dial.active { box-shadow: var(--shadow-raised-md); }
+  .lc-c-dial.active .pointer { background: var(--accent-c); }
+  .lc-c-dial-cap { margin: var(--space-2) 0 0; text-align: center; color: var(--ink-muted); }
+
+  .lc-c-meter { display: flex; align-items: flex-end; gap: 4px; height: 56px; }
+  .lc-c-meter span { flex: 1; border-radius: var(--radius-xs); background: var(--ink-100); }
+  .lc-c-meter span.on { background: var(--accent-c); }
+  .lc-c-meter span.on2 { background: var(--accent-b); }
+
+  .lc-c-caption { margin-top: var(--space-3); color: var(--ink-muted); }
+
+/* restyle: 44px touch target via hit area; visible track unchanged */
+.lc-c-toggle::before { content: ""; position: absolute; left: 0; right: 0; top: -7px; bottom: -7px; }
+</style>
+</head>
+<body>
+  <div class="lc-c-topbar">
+    <span class="label-mono lc-c-mark">LUCENT · AURORA CONSOLE</span>
+    <button class="lc-c-toggle" id="lc-c-theme-toggle" type="button" aria-pressed="false" aria-label="Toggle light and dark theme">
+      <span class="knob"></span>
+    </button>
+  </div>
+
+  <div class="lc-c-scene" id="lc-c-scene">
+    <div class="lc-c-glow" data-depth="5"></div>
+    <div class="lc-c-scanlines"></div>
+
+    <div class="lc-c-shell" data-depth="16">
+      <div class="lc-c-shell-head">
+        <h2 class="heading-md" style="margin:0;">Console</h2>
+        <div>
+          <span class="lc-c-pill live label-mono"><span class="dot"></span>LIVE</span>
+          <span class="lc-c-pill sync label-mono"><span class="dot"></span>SYNC</span>
+        </div>
+      </div>
+
+      <div class="lc-c-readout">
+        <p class="display-xl data-mono value">128.4</p>
+        <p class="label-mono unit">MHZ · CHANNEL 3</p>
+      </div>
+
+      <div class="lc-c-dials">
+        <div>
+          <div class="lc-c-dial active"><span class="pointer" style="transform: rotate(-35deg);"></span></div>
+          <p class="label-mono lc-c-dial-cap">GAIN</p>
+        </div>
+        <div>
+          <div class="lc-c-dial"><span class="pointer" style="transform: rotate(20deg);"></span></div>
+          <p class="label-mono lc-c-dial-cap">TONE</p>
+        </div>
+        <div>
+          <div class="lc-c-dial"><span class="pointer" style="transform: rotate(70deg);"></span></div>
+          <p class="label-mono lc-c-dial-cap">DRIVE</p>
+        </div>
+      </div>
+
+      <div class="lc-c-meter" aria-hidden="true">
+        <span style="height:35%"></span><span class="on" style="height:55%"></span><span class="on2" style="height:40%"></span>
+        <span class="on" style="height:70%"></span><span style="height:30%"></span><span class="on2" style="height:60%"></span>
+        <span class="on" style="height:85%"></span><span class="on" style="height:65%"></span><span style="height:25%"></span>
+        <span class="on2" style="height:50%"></span><span class="on" style="height:75%"></span><span style="height:40%"></span>
+        <span class="on2" style="height:45%"></span><span class="on" style="height:60%"></span><span style="height:20%"></span>
+        <span class="on" style="height:55%"></span>
+      </div>
+      <p class="body-sm lc-c-caption">↕ pointer parallax — the glow drifts behind the shell as you move</p>
+    </div>
+  </div>
+
+<script>
+(function () {
+  var toggle = document.getElementById('lc-c-theme-toggle');
+  var root = document.documentElement;
+  function syncTheme() {
+    var isDark = root.getAttribute('data-theme') === 'dark';
+    toggle.classList.toggle('is-dark', isDark);
+    toggle.setAttribute('aria-pressed', isDark ? 'true' : 'false');
+  }
+  toggle.addEventListener('click', function () {
+    var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    syncTheme();
+  });
+  syncTheme();
+
+  var dials = document.querySelectorAll('.lc-c-dial');
+  dials.forEach(function (d) {
+    d.addEventListener('click', function () {
+      dials.forEach(function (o) { o.classList.remove('active'); });
+      d.classList.add('active');
+    });
+  });
+
+  var scene = document.getElementById('lc-c-scene');
+  var layers = document.querySelectorAll('[data-depth]');
+  scene.addEventListener('mousemove', function (e) {
+    var rect = scene.getBoundingClientRect();
+    var nx = (e.clientX - rect.left) / rect.width - 0.5;
+    var ny = (e.clientY - rect.top) / rect.height - 0.5;
+    layers.forEach(function (el) {
+      var depth = parseFloat(el.getAttribute('data-depth'));
+      el.style.transform = 'translate(' + (nx * depth) + 'px,' + (ny * depth) + 'px)';
+    });
+  });
+  scene.addEventListener('mouseleave', function () {
+    layers.forEach(function (el) { el.style.transform = 'translate(0,0)'; });
+  });
+})();
+</script>
+</body>
+</html>

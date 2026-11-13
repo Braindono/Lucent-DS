@@ -1,0 +1,176 @@
+<!-- @dsCard group="Concepts" height=640 width=760 subtitle="Brutalist minimalism — bare neumorphic instrument panel, one indigo accent" -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Lucent — Concept A: Instrument</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap">
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; }
+  body {
+    background: var(--surface-base);
+    color: var(--ink);
+    font-family: var(--font-sans);
+    padding: var(--space-6);
+    min-height: 640px;
+  }
+  .lc-a-topbar { display: flex; align-items: center; justify-content: space-between; margin-bottom: var(--space-5); }
+  .lc-a-mark { letter-spacing: 0.08em; color: var(--ink-muted); }
+
+  /* theme toggle: a neumorphic sunken track with a raised knob */
+  .lc-a-toggle {
+    appearance: none; border: none; cursor: pointer;
+    width: 56px; height: 30px; border-radius: var(--radius-full);
+    background: var(--surface-sunken); box-shadow: var(--shadow-inset);
+    position: relative; padding: 0; flex: none;
+  }
+  .lc-a-toggle .knob {
+    position: absolute; top: 3px; left: 3px; width: 24px; height: 24px;
+    border-radius: var(--radius-full); background: var(--surface-raised);
+    box-shadow: var(--shadow-raised-md); transition: transform 180ms ease;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .lc-a-toggle.is-dark .knob { transform: translateX(26px); }
+  .lc-a-toggle .knob::after {
+    content: ""; width: 8px; height: 8px; border-radius: var(--radius-full);
+    background: var(--accent-a);
+  }
+  .lc-a-toggle:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 3px; }
+
+  .lc-a-panel {
+    position: relative;
+    background: var(--surface-raised);
+    box-shadow: var(--shadow-raised-md);
+    border-radius: var(--radius-sm);
+    padding: var(--space-6);
+  }
+  .lc-a-corner { position: absolute; width: 10px; height: 10px; border: 1px solid var(--ink-700); opacity: 0.5; }
+  .lc-a-corner.tl { top: var(--space-3); left: var(--space-3); border-right: none; border-bottom: none; }
+  .lc-a-corner.tr { top: var(--space-3); right: var(--space-3); border-left: none; border-bottom: none; }
+  .lc-a-corner.bl { bottom: var(--space-3); left: var(--space-3); border-right: none; border-top: none; }
+  .lc-a-corner.br { bottom: var(--space-3); right: var(--space-3); border-left: none; border-top: none; }
+
+  .lc-a-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: var(--space-5); }
+  .lc-a-readout { color: var(--ink-muted); }
+
+  .lc-a-fader-track {
+    position: relative; height: 10px; border-radius: var(--radius-full);
+    background: var(--surface-sunken); box-shadow: var(--shadow-inset);
+    margin-bottom: var(--space-6);
+  }
+  .lc-a-fader-fill { position: absolute; top: 0; left: 0; bottom: 0; width: 45%; border-radius: var(--radius-full); background: var(--accent-a); }
+  .lc-a-fader-thumb {
+    position: absolute; top: 50%; left: 45%; width: 20px; height: 20px;
+    transform: translate(-50%, -50%); border-radius: var(--radius-full);
+    background: var(--surface-raised); box-shadow: var(--shadow-raised-md);
+  }
+
+  .lc-a-transport { display: flex; gap: var(--space-3); margin-bottom: var(--space-6); }
+  .lc-a-tbtn {
+    width: 44px; height: 44px; border: none; border-radius: var(--radius-xs);
+    background: var(--surface-raised); box-shadow: var(--shadow-raised-md);
+    display: flex; align-items: center; justify-content: center; cursor: pointer;
+  }
+  .lc-a-tbtn.is-active { box-shadow: var(--shadow-inset); }
+  .lc-a-tbtn:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+  .lc-a-icon-play { width: 0; height: 0; border-top: 6px solid transparent; border-bottom: 6px solid transparent; border-left: 10px solid var(--ink); margin-left: 2px; }
+  .lc-a-icon-pause { display: flex; gap: 3px; }
+  .lc-a-icon-pause span { width: 3px; height: 12px; background: var(--ink); display: block; }
+  .lc-a-icon-stop { width: 11px; height: 11px; background: var(--ink); }
+  .lc-a-icon-rec { width: 11px; height: 11px; border-radius: var(--radius-full); background: var(--accent-a); }
+
+  .lc-a-tag {
+    position: absolute; top: var(--space-3); right: calc(var(--space-3) + 46px);
+    padding: var(--space-1) var(--space-3);
+    background: var(--glass-surface); backdrop-filter: blur(var(--blur-sm)); -webkit-backdrop-filter: blur(var(--blur-sm));
+    
+    border-radius: var(--radius-full); color: var(--ink);
+  }
+
+  .lc-a-ticks {
+    height: 8px; margin-bottom: var(--space-5);
+    background-image: repeating-linear-gradient(to right, var(--ink-300) 0 1px, transparent 1px 12px);
+    background-position: left center; background-repeat: repeat-x; opacity: 0.6;
+  }
+
+  .lc-a-actions { display: flex; align-items: center; gap: var(--space-4); }
+  .lc-a-primary {
+    appearance: none; border: none; cursor: pointer;
+    padding: var(--space-3) var(--space-5); border-radius: var(--radius-sm);
+    background: var(--accent-a); color: var(--accent-a-on); box-shadow: var(--shadow-raised-md);
+  }
+  .lc-a-primary:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+  .lc-a-secondary {
+    appearance: none; cursor: pointer; padding: var(--space-3) var(--space-5);
+    border-radius: var(--radius-sm); background: transparent; border: 1px solid var(--ink-100); color: var(--ink-muted);
+  }
+  .lc-a-secondary:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+
+  .lc-a-footer { margin-top: var(--space-6); padding-top: var(--space-5); border-top: 1px solid var(--ink-100); color: var(--ink-muted); }
+
+/* restyle: 44px touch target via hit area; visible track unchanged */
+.lc-a-toggle::before { content: ""; position: absolute; left: 0; right: 0; top: -7px; bottom: -7px; }
+</style>
+</head>
+<body>
+  <div class="lc-a-topbar">
+    <span class="label-mono lc-a-mark">LUCENT · INSTRUMENT</span>
+    <button class="lc-a-toggle" id="lc-a-theme-toggle" type="button" aria-pressed="false" aria-label="Toggle light and dark theme">
+      <span class="knob"></span>
+    </button>
+  </div>
+
+  <div class="lc-a-panel">
+    <span class="lc-a-corner tl"></span><span class="lc-a-corner tr"></span>
+    <span class="lc-a-corner bl"></span><span class="lc-a-corner br"></span>
+
+    <span class="lc-a-tag label-mono">V0.3</span>
+
+    <div class="lc-a-row">
+      <h2 class="heading-sm" style="margin:0;">Playback</h2>
+      <span class="data-mono lc-a-readout">LVL 07⁄12</span>
+    </div>
+
+    <div class="lc-a-fader-track">
+      <div class="lc-a-fader-fill"></div>
+      <div class="lc-a-fader-thumb"></div>
+    </div>
+
+    <div class="lc-a-transport">
+      <button class="lc-a-tbtn" type="button" aria-label="Stop"><span class="lc-a-icon-stop"></span></button>
+      <button class="lc-a-tbtn is-active" type="button" aria-label="Play"><span class="lc-a-icon-play"></span></button>
+      <button class="lc-a-tbtn" type="button" aria-label="Pause"><span class="lc-a-icon-pause"><span></span><span></span></span></button>
+      <button class="lc-a-tbtn" type="button" aria-label="Record"><span class="lc-a-icon-rec"></span></button>
+    </div>
+
+    <div class="lc-a-ticks" aria-hidden="true"></div>
+
+    <div class="lc-a-actions">
+      <button class="lc-a-primary heading-sm" type="button" style="font-weight:600;">Calibrate</button>
+      <button class="lc-a-secondary body" type="button">Reset</button>
+    </div>
+
+    <div class="lc-a-footer data-mono">X 128 · Y 064 · Z 032</div>
+  </div>
+
+<script>
+(function () {
+  var btn = document.getElementById('lc-a-theme-toggle');
+  var root = document.documentElement;
+  function sync() {
+    var isDark = root.getAttribute('data-theme') === 'dark';
+    btn.classList.toggle('is-dark', isDark);
+    btn.setAttribute('aria-pressed', isDark ? 'true' : 'false');
+  }
+  btn.addEventListener('click', function () {
+    var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    sync();
+  });
+  sync();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!-- @dsCard group="Primary Direction" height=700 width=760 subtitle="Locked — Instrument's structure and restraint merged with Atrium's glass, in the indigo/violet/cyan primary/secondary/tertiary hierarchy" -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Lucent — Primary Direction</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap">
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; }
+  body {
+    background: var(--surface-base);
+    color: var(--ink);
+    font-family: var(--font-sans);
+    padding: var(--space-6);
+    min-height: 700px;
+  }
+  .lc-p-topbar { display: flex; align-items: center; justify-content: space-between; margin-bottom: var(--space-5); }
+  .lc-p-mark { letter-spacing: 0.08em; color: var(--ink-muted); }
+
+  /* theme toggle: Atrium's glass track, Instrument's small indigo tell */
+  .lc-p-toggle {
+    appearance: none; border: none; cursor: pointer;
+    width: 56px; height: 30px; border-radius: var(--radius-full);
+    background: var(--surface-control); backdrop-filter: blur(var(--blur-sm)); -webkit-backdrop-filter: blur(var(--blur-sm));
+    
+    position: relative; padding: 0; flex: none;
+  }
+  .lc-p-toggle .knob {
+    position: absolute; top: 3px; left: 3px; width: 24px; height: 24px;
+    border-radius: var(--radius-full); background: var(--surface-raised);
+    box-shadow: var(--shadow-raised-md); transition: transform 180ms ease;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .lc-p-toggle.is-dark .knob { transform: translateX(26px); }
+  .lc-p-toggle .knob::after { content: ""; width: 8px; height: 8px; border-radius: var(--radius-full); background: var(--accent-primary); }
+  .lc-p-toggle:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 3px; }
+
+  /* Instrument's bare neumorphic base, kept but pulled one step off its sharpest radius toward Atrium's roundness */
+  .lc-p-scene { position: relative; }
+  .lc-p-base {
+    position: relative;
+    background: var(--surface-raised);
+    box-shadow: var(--shadow-raised-md);
+    border-radius: var(--radius-sm);
+    padding: var(--space-6);
+    min-height: 560px;
+  }
+  .lc-p-corner { position: absolute; width: 10px; height: 10px; border: 1px solid var(--ink-700); opacity: 0.5; }
+  .lc-p-corner.tl { top: var(--space-3); left: var(--space-3); border-right: none; border-bottom: none; }
+  .lc-p-corner.tr { top: var(--space-3); right: var(--space-3); border-left: none; border-bottom: none; }
+  .lc-p-corner.bl { bottom: var(--space-3); left: var(--space-3); border-right: none; border-top: none; }
+  .lc-p-corner.br { bottom: var(--space-3); right: var(--space-3); border-left: none; border-top: none; }
+
+  .lc-p-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: var(--space-5); }
+
+  /* the tertiary tell — a small glass tag, cyan dot + label, never a solid fill */
+  .lc-p-tag {
+    display: inline-flex; align-items: center; gap: var(--space-2);
+    padding: var(--space-1) var(--space-3);
+    background: var(--glass-surface); backdrop-filter: blur(var(--blur-sm)); -webkit-backdrop-filter: blur(var(--blur-sm));
+    
+    border-radius: var(--radius-full); color: var(--ink);
+  }
+  .lc-p-tag .dot { width: 7px; height: 7px; border-radius: var(--radius-full); background: var(--accent-tertiary); flex: none; }
+
+  .lc-p-ticks {
+    height: 8px; margin-bottom: var(--space-5);
+    background-image: repeating-linear-gradient(to right, var(--ink-300) 0 1px, transparent 1px 12px);
+    background-position: left center; background-repeat: repeat-x; opacity: 0.6;
+  }
+
+  /* the floating glass readout — Atrium's layered panel, sized down to one purposeful instance rather than a parallax field */
+  .lc-p-glow {
+    position: absolute; z-index: 0; inset: 8px 8px auto auto; width: 340px; height: 220px;
+    background: radial-gradient(280px 200px at 70% 20%, var(--accent-secondary) 0%, transparent 70%);
+    opacity: var(--opacity-glass-subtle);
+    filter: blur(var(--blur-lg));
+    pointer-events: none;
+  }
+  .lc-p-glass {
+    position: relative; z-index: 1;
+    background: var(--glass-surface-strong); backdrop-filter: blur(var(--blur-md)); -webkit-backdrop-filter: blur(var(--blur-md));
+    
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-raised-md);
+    padding: var(--space-5);
+    display: flex; align-items: flex-end; justify-content: space-between; gap: var(--space-5);
+    margin-bottom: var(--space-6);
+  }
+  .lc-p-readout-value { margin: 0; }
+  .lc-p-readout-label { margin: var(--space-2) 0 0; color: var(--ink-muted); }
+  .lc-p-delta { display: flex; align-items: center; gap: var(--space-2); color: var(--accent-secondary); flex: none; }
+  .lc-p-delta .arrow { width: 0; height: 0; border-left: 5px solid transparent; border-right: 5px solid transparent; border-bottom: 8px solid var(--accent-secondary); }
+
+  .lc-p-fader-track {
+    position: relative; height: 10px; border-radius: var(--radius-full);
+    background: var(--surface-sunken); box-shadow: var(--shadow-inset);
+    margin-bottom: var(--space-6);
+  }
+  .lc-p-fader-fill { position: absolute; top: 0; left: 0; bottom: 0; width: 62%; border-radius: var(--radius-full); background: var(--accent-primary); }
+  .lc-p-fader-thumb {
+    position: absolute; top: 50%; left: 62%; width: 20px; height: 20px;
+    transform: translate(-50%, -50%); border-radius: var(--radius-full);
+    background: var(--surface-raised); box-shadow: var(--shadow-raised-md);
+  }
+
+  .lc-p-transport { display: flex; gap: var(--space-3); margin-bottom: var(--space-6); }
+  .lc-p-tbtn {
+    width: 44px; height: 44px; border: none; border-radius: var(--radius-xs);
+    background: var(--surface-raised); box-shadow: var(--shadow-raised-md);
+    display: flex; align-items: center; justify-content: center; cursor: pointer;
+  }
+  .lc-p-tbtn.is-active { box-shadow: var(--shadow-inset); }
+  .lc-p-tbtn:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+  .lc-p-icon-play { width: 0; height: 0; border-top: 6px solid transparent; border-bottom: 6px solid transparent; border-left: 10px solid var(--ink); margin-left: 2px; }
+  .lc-p-icon-pause { display: flex; gap: 3px; }
+  .lc-p-icon-pause span { width: 3px; height: 12px; background: var(--ink); display: block; }
+  .lc-p-icon-stop { width: 11px; height: 11px; background: var(--ink); }
+  .lc-p-icon-rec { width: 11px; height: 11px; border-radius: var(--radius-full); background: var(--accent-primary); }
+
+  .lc-p-actions { display: flex; align-items: center; gap: var(--space-4); }
+  .lc-p-primary {
+    appearance: none; border: none; cursor: pointer;
+    padding: var(--space-3) var(--space-5); border-radius: var(--radius-sm);
+    background: var(--accent-primary); color: var(--accent-primary-on); box-shadow: var(--shadow-raised-md);
+  }
+  .lc-p-primary:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+  .lc-p-secondary {
+    appearance: none; cursor: pointer; padding: var(--space-3) var(--space-5);
+    border-radius: var(--radius-sm); background: transparent; border: 1px solid var(--accent-secondary); color: var(--accent-secondary);
+  }
+  .lc-p-secondary:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+
+  .lc-p-footer { margin-top: var(--space-6); padding-top: var(--space-5); border-top: 1px solid var(--ink-100); color: var(--ink-muted); }
+
+/* restyle: 44px touch target via hit area; visible track unchanged */
+.lc-p-toggle::before { content: ""; position: absolute; left: 0; right: 0; top: -7px; bottom: -7px; }
+</style>
+</head>
+<body>
+  <div class="lc-p-topbar">
+    <span class="label-mono lc-p-mark">LUCENT · PRIMARY DIRECTION</span>
+    <button class="lc-p-toggle" id="lc-p-theme-toggle" type="button" aria-pressed="false" aria-label="Toggle light and dark theme">
+      <span class="knob"></span>
+    </button>
+  </div>
+
+  <div class="lc-p-scene">
+    <div class="lc-p-base">
+      <span class="lc-p-corner tl"></span><span class="lc-p-corner tr"></span>
+      <span class="lc-p-corner bl"></span><span class="lc-p-corner br"></span>
+
+      <div class="lc-p-row">
+        <h2 class="heading-sm" style="margin:0;">Console</h2>
+        <span class="lc-p-tag label-mono"><span class="dot"></span>SYNCED</span>
+      </div>
+
+      <div class="lc-p-ticks" aria-hidden="true"></div>
+
+      <div style="position:relative;">
+        <div class="lc-p-glow" aria-hidden="true"></div>
+        <div class="lc-p-glass">
+          <div>
+            <p class="display-lg data-mono lc-p-readout-value">941.2</p>
+            <p class="body-sm lc-p-readout-label">Throughput · req/s</p>
+          </div>
+          <div class="lc-p-delta data-mono body-sm">
+            <span class="arrow"></span>
+            <span>+6.4%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="lc-p-fader-track">
+        <div class="lc-p-fader-fill"></div>
+        <div class="lc-p-fader-thumb"></div>
+      </div>
+
+      <div class="lc-p-transport" role="group" aria-label="Transport">
+        <button class="lc-p-tbtn" type="button" aria-label="Stop" aria-pressed="false"><span class="lc-p-icon-stop"></span></button>
+        <button class="lc-p-tbtn is-active" type="button" aria-label="Play" aria-pressed="true"><span class="lc-p-icon-play"></span></button>
+        <button class="lc-p-tbtn" type="button" aria-label="Pause" aria-pressed="false"><span class="lc-p-icon-pause"><span></span><span></span></span></button>
+        <button class="lc-p-tbtn" type="button" aria-label="Record" aria-pressed="false"><span class="lc-p-icon-rec"></span></button>
+      </div>
+
+      <div class="lc-p-actions">
+        <button class="lc-p-primary heading-sm" type="button" style="font-weight:600;">Calibrate</button>
+        <button class="lc-p-secondary body" type="button">Inspect</button>
+      </div>
+
+      <div class="lc-p-footer data-mono">X 128 · Y 064 · Z 032</div>
+    </div>
+  </div>
+
+<script>
+(function () {
+  var btn = document.getElementById('lc-p-theme-toggle');
+  var root = document.documentElement;
+  function sync() {
+    var isDark = root.getAttribute('data-theme') === 'dark';
+    btn.classList.toggle('is-dark', isDark);
+    btn.setAttribute('aria-pressed', isDark ? 'true' : 'false');
+  }
+  btn.addEventListener('click', function () {
+    var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    sync();
+  });
+  sync();
+
+  var tbtns = document.querySelectorAll('.lc-p-tbtn');
+  Array.prototype.forEach.call(tbtns, function (b) {
+    b.addEventListener('click', function () {
+      Array.prototype.forEach.call(tbtns, function (x) { x.classList.remove('is-active'); x.setAttribute('aria-pressed', 'false'); });
+      b.classList.add('is-active');
+      b.setAttribute('aria-pressed', 'true');
+    });
+  });
+})();
+</script>
+</body>
+</html>

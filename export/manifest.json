@@ -1,0 +1,21 @@
+{
+  "bundle": "lucent",
+  "version": "0.5.0",
+  "created": "2026-10-26",
+  "rules": [
+    "no serif fonts",
+    "whole-pixel spacing",
+    "inject tokens.css before a11y checks",
+    "fonts: Space Grotesk (sans) + Space Mono; no serif fallbacks"
+  ],
+  "changes": "0.5.0: case-study tokens renamed semaphore-* -> panel-*. Space Grotesk/Space Mono font files listed in tokens.json. No colour, size or spacing value changed. Prior: 0.4.0 dark theme lifted toward cooler greys.",
+  "source": "project/tokens.json",
+  "files": {
+    "tokens.css": "cf35e9e7b91f1f20867d683523e39a35ade0d456fbd9cda7031a95df4fdaa7fd",
+    "tokens.light.json": "1000c4e1dc0f07b5d914b59f3408da4f1f8ac92c1180793da246057a18f758f9",
+    "tokens.dark.json": "e6087c1bcc1b31e6e6548072d31e7f430101e769b28812be1dbd97c54e279cb0",
+    "typography.json": "f9b37e0e29439d770a1c102053737c1655ad9d7084347887c772f93db52afc29",
+    "motion.json": "430e118bcbddfe83a5becb94fefc9142bc1743d99cbe304088556ded24af8433",
+    "README.md": "5e97c35b45a45419a8ec429b4552083cd7f4a74ed953590bf49c440f07b5b1a5"
+  }
+}

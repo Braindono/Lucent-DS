@@ -1,0 +1,470 @@
+<!-- @dsCard group="Dashboards" height=1760 width=1200 subtitle="Aurora Console applied to a dense analytics + Kanban screen — stat tiles, charts, heatmap, gauge, board, log stream" -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Lucent — Dashboard: Aurora Console</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap">
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    background: var(--surface-base); color: var(--ink); font-family: var(--font-sans);
+    padding: var(--space-6); min-height: 1760px;
+  }
+  a { color: inherit; }
+
+  /* ---------- topbar ---------- */
+  .lc-d-topbar { display: flex; align-items: center; justify-content: space-between; gap: var(--space-5); margin-bottom: var(--space-6); flex-wrap: wrap; }
+  .lc-d-mark { display: flex; align-items: center; gap: var(--space-3); }
+  .lc-d-mark .dot { width: 10px; height: 10px; border-radius: var(--radius-full); background: var(--accent-c); }
+  .lc-d-mark span.name { letter-spacing: 0.08em; color: var(--ink-muted); }
+  .lc-d-filters { display: flex; align-items: center; gap: var(--space-3); flex: 1; min-width: 260px; max-width: 640px; }
+  .lc-d-range {
+    display: flex; gap: var(--space-2); padding: 3px; border-radius: var(--radius-full);
+    background: var(--surface-control); backdrop-filter: blur(var(--blur-sm)); -webkit-backdrop-filter: blur(var(--blur-sm));
+    
+  }
+  .lc-d-range button {
+    appearance: none; border: none; cursor: pointer; padding: var(--space-1) var(--space-3);
+    border-radius: var(--radius-full); background: transparent; color: var(--ink-muted);
+  }
+  .lc-d-range button.on { background: var(--accent-c); color: var(--accent-c-on); }
+  .lc-d-search {
+    flex: 1; display: flex; align-items: center; gap: var(--space-2); padding: var(--space-2) var(--space-4);
+    border-radius: var(--radius-full); background: var(--surface-input); backdrop-filter: blur(var(--blur-sm)); -webkit-backdrop-filter: blur(var(--blur-sm));
+     color: var(--ink-muted);
+  }
+  .lc-d-search .ic { width: 12px; height: 12px; border: 2px solid var(--ink-faint); border-radius: var(--radius-full); flex: none; }
+
+  .lc-d-toggle {
+    appearance: none; border: none; cursor: pointer; width: 56px; height: 30px; border-radius: var(--radius-full);
+    background: var(--surface-control); backdrop-filter: blur(var(--blur-sm)); -webkit-backdrop-filter: blur(var(--blur-sm));
+     position: relative; padding: 0; flex: none;
+  }
+  .lc-d-toggle .knob {
+    position: absolute; top: 3px; left: 3px; width: 24px; height: 24px; border-radius: var(--radius-full);
+    background: var(--surface-raised); box-shadow: var(--shadow-raised-md); transition: transform 180ms ease, box-shadow 180ms ease;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .lc-d-toggle.is-dark .knob { transform: translateX(26px); box-shadow: var(--shadow-raised-md); }
+  .lc-d-toggle .knob::after { content: ""; width: 8px; height: 8px; border-radius: var(--radius-full); background: var(--accent-c); }
+  .lc-d-toggle:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 3px; }
+
+  /* ---------- ambient scene ---------- */
+  .lc-d-scene { position: relative; }
+  .lc-d-glow {
+    position: absolute; inset: -80px; z-index: 0; pointer-events: none;
+    background:
+      radial-gradient(560px 360px at 12% 4%, var(--accent-c-glow) 0%, transparent 62%),
+      radial-gradient(480px 340px at 92% 18%, var(--accent-b) 0%, transparent 60%);
+    opacity: var(--opacity-glass-subtle); filter: blur(var(--blur-lg)); transition: transform 120ms ease-out;
+  }
+  .lc-d-scanlines {
+    position: absolute; inset: 0; z-index: 0; pointer-events: none; opacity: 0.03;
+    background-image: repeating-linear-gradient(to bottom, var(--ink-950) 0 1px, transparent 1px 3px);
+  }
+  .lc-d-content { position: relative; z-index: 1; display: flex; flex-direction: column; gap: var(--space-6); }
+
+  /* ---------- shared panel ---------- */
+  .lc-d-panel {
+    background: var(--glass-surface-strong); backdrop-filter: blur(var(--blur-md)); -webkit-backdrop-filter: blur(var(--blur-md));
+    
+    border-radius: var(--radius-xl); box-shadow: var(--shadow-raised-md);
+    padding: var(--space-6); transition: transform 120ms ease-out;
+  }
+  .lc-d-panel-head { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: var(--space-5); gap: var(--space-3); flex-wrap: wrap; }
+  .lc-d-panel-head h3 { margin: 0; }
+  .lc-d-panel-head .cap { color: var(--ink-muted); }
+
+  /* ---------- stat row ---------- */
+  .lc-d-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--space-5); }
+  .lc-d-stat { padding: var(--space-5); }
+  .lc-d-stat .label { margin: 0 0 var(--space-2); color: var(--ink-muted); }
+  .lc-d-stat .value { margin: 0; display: flex; align-items: baseline; gap: var(--space-2); }
+  .lc-d-stat .value .n { font-variant-numeric: normal; }
+  .lc-d-stat .delta { display: inline-flex; align-items: center; gap: 4px; margin-top: var(--space-2); }
+  .lc-d-stat .delta.up { color: var(--status-good); }
+  .lc-d-stat .delta.down { color: var(--status-critical); }
+  .lc-d-stat .delta .arrow { width: 0; height: 0; border-left: 4px solid transparent; border-right: 4px solid transparent; }
+  .lc-d-stat .delta.up .arrow { border-bottom: 6px solid var(--status-good); }
+  .lc-d-stat .delta.down .arrow { border-top: 6px solid var(--status-critical); }
+  .lc-d-stat svg { display: block; margin-top: var(--space-3); overflow: visible; }
+
+  /* ---------- analytics rows ---------- */
+  .lc-d-row { display: grid; gap: var(--space-6); }
+  .lc-d-row.a { grid-template-columns: minmax(360px, 2.4fr) minmax(260px, 1fr); }
+  .lc-d-row.b { grid-template-columns: minmax(320px, 1fr) minmax(320px, 1fr); }
+
+  .lc-d-legend { display: flex; gap: var(--space-5); }
+  .lc-d-legend-item { display: flex; align-items: center; gap: var(--space-2); color: var(--ink-muted); }
+  .lc-d-legend-item .sw { width: 10px; height: 10px; border-radius: 3px; }
+
+  .lc-d-chart-wrap { position: relative; }
+  .lc-d-chart-wrap svg { display: block; width: 100%; height: auto; overflow: visible; }
+  .lc-d-axis-label { fill: var(--ink-muted); font-family: var(--font-mono); font-size: 10px; }
+  .lc-d-endlabel { fill: var(--ink); font-family: var(--font-mono); font-size: 12px; font-weight: 700; }
+
+  .lc-d-gauge { display: flex; flex-direction: column; align-items: center; text-align: center; height: 100%; justify-content: center; }
+  .lc-d-gauge svg { overflow: visible; }
+  .lc-d-gauge .figure { margin: calc(-1 * var(--space-8)) 0 0; }
+  .lc-d-gauge .cap { margin: var(--space-2) 0 0; color: var(--ink-muted); }
+  .lc-d-gauge .band { display: inline-flex; align-items: center; gap: 6px; margin-top: var(--space-3); padding: var(--space-1) var(--space-3); border-radius: var(--radius-full); background: color-mix(in srgb, var(--status-warning) 16%, transparent); color: var(--status-warning); }
+  .lc-d-gauge .band .dot { width: 6px; height: 6px; border-radius: var(--radius-full); background: var(--status-warning); }
+
+  .lc-d-bars { display: flex; flex-direction: column; gap: var(--space-4); }
+  .lc-d-bar-row { display: grid; grid-template-columns: 120px 1fr 48px; align-items: center; gap: var(--space-3); }
+  .lc-d-bar-row .svc { color: var(--ink-muted); }
+  .lc-d-bar-track { position: relative; height: 20px; background: var(--surface-sunken); box-shadow: var(--shadow-inset); border-radius: var(--radius-xs); overflow: hidden; }
+  .lc-d-bar-fill { position: absolute; top: 0; left: 0; bottom: 0; border-radius: var(--radius-xs); background: var(--status-critical); }
+  .lc-d-bar-row .val { text-align: right; color: var(--ink); font-family: var(--font-mono); }
+
+  .lc-d-heatmap { display: grid; grid-template-columns: 32px repeat(8, 1fr); gap: 3px; align-items: center; }
+  .lc-d-heatmap .rowlabel { color: var(--ink-muted); font-family: var(--font-mono); font-size: 11px; }
+  .lc-d-heatmap .collabel { color: var(--ink-muted); font-family: var(--font-mono); font-size: 10px; text-align: center; }
+  .lc-d-heatmap .cell { aspect-ratio: 1; border-radius: 3px; background: var(--viz-series-c); }
+
+  /* ---------- kanban ---------- */
+  .lc-d-kanban-wrap { display: grid; grid-template-columns: minmax(0, 2.4fr) minmax(280px, 1fr); gap: var(--space-6); align-items: start; }
+  .lc-d-kanban { display: grid; grid-template-columns: repeat(4, minmax(200px, 1fr)); gap: var(--space-4); }
+  .lc-d-col { background: var(--glass-surface); backdrop-filter: blur(var(--blur-sm)); -webkit-backdrop-filter: blur(var(--blur-sm));  border-radius: var(--radius-lg); padding: var(--space-4); box-shadow: var(--shadow-raised-sm); }
+  .lc-d-col-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: var(--space-4); }
+  .lc-d-col-head .count { font-family: var(--font-mono); color: var(--ink-muted); }
+  .lc-d-card { background: var(--surface-raised); box-shadow: var(--shadow-raised-md); border-radius: var(--radius-md); padding: var(--space-4); margin-bottom: var(--space-3); }
+  .lc-d-card:last-child { margin-bottom: 0; }
+  .lc-d-card .title { margin: 0 0 var(--space-3); }
+  .lc-d-card .meta { display: flex; align-items: center; justify-content: space-between; gap: var(--space-2); }
+  .lc-d-tag { display: inline-block; padding: 2px var(--space-2); border-radius: var(--radius-xs); background: var(--surface-sunken); color: var(--ink-muted); font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.03em; }
+  .lc-d-prio { display: inline-flex; align-items: center; gap: 5px; color: var(--ink-muted); font-family: var(--font-mono); font-size: 10px; }
+  .lc-d-prio .shape { width: 8px; height: 8px; flex: none; }
+  .lc-d-prio.low .shape { border-radius: var(--radius-full); background: var(--status-good); }
+  .lc-d-prio.medium .shape { border-radius: 2px; background: var(--status-warning); }
+  .lc-d-prio.high .shape { background: transparent; width: 0; height: 0; border-left: 5px solid transparent; border-right: 5px solid transparent; border-bottom: 8px solid var(--status-serious); }
+  .lc-d-prio.critical .shape { background: var(--status-critical); transform: rotate(45deg); border-radius: 1px; }
+
+  /* ---------- log stream ---------- */
+  .lc-d-log { display: flex; flex-direction: column; gap: 2px; max-height: 560px; overflow: hidden; }
+  .lc-d-log-row { display: grid; grid-template-columns: 8px 74px 1fr; align-items: start; gap: var(--space-3); padding: var(--space-2) var(--space-2); border-radius: var(--radius-xs); }
+  .lc-d-log-row:hover { background: var(--glass-surface); }
+  .lc-d-log-dot { width: 8px; height: 8px; border-radius: var(--radius-full); margin-top: 5px; }
+  .lc-d-log-dot.good { background: var(--status-good); }
+  .lc-d-log-dot.warning { background: var(--status-warning); }
+  .lc-d-log-dot.serious { background: var(--status-serious); }
+  .lc-d-log-dot.critical { background: var(--status-critical); }
+  .lc-d-log-time { color: var(--ink-muted); font-family: var(--font-mono); font-size: 11px; margin-top: 2px; }
+  .lc-d-log-msg { color: var(--ink); }
+  .lc-d-log-msg .svc { color: var(--ink-muted); margin-left: var(--space-2); }
+
+  .lc-d-hint { color: var(--ink-muted); margin-top: 0; }
+  .lc-d-sr { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+
+/* restyle: 44px touch target via hit area; visible track unchanged */
+.lc-d-toggle::before { content: ""; position: absolute; left: 0; right: 0; top: -7px; bottom: -7px; }
+.lc-d-range button { min-height: 44px; }
+</style>
+</head>
+<body>
+
+  <header class="lc-d-topbar">
+    <div class="lc-d-mark">
+      <span class="dot"></span>
+      <span class="label-mono name">LUCENT · AURORA CONSOLE</span>
+    </div>
+    <div class="lc-d-filters">
+      <div class="lc-d-range" role="group" aria-label="Time range">
+        <button type="button" aria-pressed="false">1H</button>
+        <button type="button" class="on" aria-pressed="true">24H</button>
+        <button type="button" aria-pressed="false">7D</button>
+        <button type="button" aria-pressed="false">30D</button>
+      </div>
+      <div class="lc-d-search"><span class="ic"></span><span class="body-sm">Search signals, services, hosts…</span></div>
+    </div>
+    <button class="lc-d-toggle" id="lc-d-theme-toggle" type="button" aria-pressed="false" aria-label="Toggle light and dark theme">
+      <span class="knob"></span>
+    </button>
+  </header>
+
+  <main class="lc-d-scene" id="lc-d-scene" aria-labelledby="lc-d-title">
+    <div class="lc-d-glow" data-depth="4"></div>
+    <div class="lc-d-scanlines"></div>
+
+    <div class="lc-d-content">
+      <h2 id="lc-d-title" class="lc-d-sr">Aurora Console dashboard</h2>
+
+      <!-- stat tiles -->
+      <div class="lc-d-stats">
+        <div class="lc-d-panel lc-d-stat" data-depth="6">
+          <p class="body-sm label">Active signals</p>
+          <p class="display-lg data-mono value"><span class="n">1,284</span></p>
+          <span class="lc-d-stat delta up body-sm"><span class="arrow"></span>4.2%</span>
+          <svg viewBox="0 0 96 28" width="100%" height="28" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M2.0,26.0 L10.4,20.5 L18.7,18.3 L27.1,14.2 L35.5,10.5 L43.8,8.7 L52.2,10.1 L60.5,6.9 L68.9,5.5 L77.3,4.2 L85.6,3.3 L94.0,2.0" fill="none" stroke="var(--viz-series-c)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="lc-d-panel lc-d-stat" data-depth="6">
+          <p class="body-sm label">Error rate</p>
+          <p class="display-lg data-mono value"><span class="n">0.82%</span></p>
+          <span class="lc-d-stat delta down body-sm"><span class="arrow"></span>0.31pt</span>
+          <svg viewBox="0 0 96 28" width="100%" height="28" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M2.0,26.0 L10.4,21.2 L18.7,23.6 L27.1,11.6 L35.5,2.0 L43.8,9.2 L52.2,12.6 L60.5,10.6 L68.9,14.0 L77.3,15.0 L85.6,16.4 L94.0,15.4" fill="none" stroke="var(--status-critical)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="lc-d-panel lc-d-stat" data-depth="6">
+          <p class="body-sm label">P95 latency</p>
+          <p class="display-lg data-mono value"><span class="n">128ms</span></p>
+          <span class="lc-d-stat delta down body-sm"><span class="arrow"></span>6ms</span>
+          <svg viewBox="0 0 96 28" width="100%" height="28" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M2.0,26.0 L10.4,20.0 L18.7,16.4 L27.1,11.6 L35.5,15.2 L43.8,8.0 L52.2,2.0 L60.5,4.4 L68.9,9.2 L77.3,6.8 L85.6,5.6 L94.0,4.4" fill="none" stroke="var(--viz-series-b)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="lc-d-panel lc-d-stat" data-depth="6">
+          <p class="body-sm label">SLA (30d)</p>
+          <p class="display-lg data-mono value"><span class="n">99.95%</span></p>
+          <span class="lc-d-stat delta up body-sm"><span class="arrow"></span>0.02pt</span>
+          <svg viewBox="0 0 96 28" width="100%" height="28" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M2.0,2.0 L10.4,6.8 L18.7,11.6 L27.1,16.4 L35.5,21.2 L43.8,26.0 L52.2,21.2 L60.5,16.4 L68.9,21.2 L77.3,21.2 L85.6,16.4 L94.0,21.2" fill="none" stroke="var(--status-good)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- row A: throughput + gauge -->
+      <div class="lc-d-row a">
+        <div class="lc-d-panel" data-depth="10" role="region" aria-labelledby="lc-d-h1">
+          <div class="lc-d-panel-head">
+            <h3 id="lc-d-h1" class="heading-md">Signal throughput</h3>
+            <div class="lc-d-legend body-sm">
+              <span class="lc-d-legend-item"><span class="sw" style="background:var(--viz-series-b)"></span>Success</span>
+              <span class="lc-d-legend-item"><span class="sw" style="background:var(--status-critical)"></span>Errors · 66/min now</span>
+            </div>
+          </div>
+          <div class="lc-d-chart-wrap">
+            <svg viewBox="0 0 600 190" preserveAspectRatio="none" role="img" aria-label="Signal throughput over the last 24 hours, success and error requests stacked">
+              <line x1="0" y1="0" x2="600" y2="0" stroke="var(--ink-100)" stroke-width="1"/>
+              <line x1="0" y1="53.3" x2="600" y2="53.3" stroke="var(--ink-100)" stroke-width="1"/>
+              <line x1="0" y1="106.6" x2="600" y2="106.6" stroke="var(--ink-100)" stroke-width="1"/>
+              <line x1="0" y1="160" x2="600" y2="160" stroke="var(--ink-300)" stroke-width="1"/>
+              <path d="M0,160 L0.0,93.8 L54.5,99.9 L109.1,104.6 L163.6,84.6 L218.2,47.8 L272.7,24.0 L327.3,15.3 L381.8,20.1 L436.4,29.2 L490.9,41.0 L545.5,60.8 L600.0,79.5 L600,160 Z" fill="var(--viz-series-b)" opacity="0.14"/>
+              <path d="M0.0,93.8 L54.5,99.9 L109.1,104.6 L163.6,84.6 L218.2,47.8 L272.7,24.0 L327.3,15.3 L381.8,20.1 L436.4,29.2 L490.9,41.0 L545.5,60.8 L600.0,79.5 L600.0,78.4 L545.5,59.2 L490.9,38.4 L436.4,25.6 L381.8,14.4 L327.3,8.0 L272.7,19.2 L218.2,44.8 L163.6,83.2 L109.1,104.0 L54.5,99.2 L0.0,92.8 Z" fill="var(--status-critical)" opacity="0.55"/>
+              <path d="M0.0,93.8 L54.5,99.9 L109.1,104.6 L163.6,84.6 L218.2,47.8 L272.7,24.0 L327.3,15.3 L381.8,20.1 L436.4,29.2 L490.9,41.0 L545.5,60.8 L600.0,79.5" fill="none" stroke="var(--viz-series-b)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M0.0,92.8 L54.5,99.2 L109.1,104.0 L163.6,83.2 L218.2,44.8 L272.7,19.2 L327.3,8.0 L381.8,14.4 L436.4,25.6 L490.9,38.4 L545.5,59.2 L600.0,78.4" fill="none" stroke="var(--status-critical)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="600" cy="79.5" r="4" fill="var(--surface-base)" stroke="var(--viz-series-b)" stroke-width="2"/>
+              <circle cx="600" cy="78.4" r="3" fill="var(--status-critical)" stroke="var(--surface-base)" stroke-width="2"/>
+              <text x="606" y="88" class="lc-d-endlabel">5.0K</text>
+              <text x="0" y="176" class="lc-d-axis-label">00:00</text>
+              <text x="315" y="176" class="lc-d-axis-label">12:00</text>
+              <text x="560" y="176" class="lc-d-axis-label">22:00</text>
+            </svg>
+          </div>
+          <p class="lc-d-hint body-sm">req/min, stacked · errors read as the thin band riding the top edge</p>
+        </div>
+
+        <div class="lc-d-panel lc-d-gauge" data-depth="14" role="region" aria-labelledby="lc-d-h2">
+          <h3 id="lc-d-h2" class="heading-md" style="align-self:flex-start;">Capacity</h3>
+          <svg width="180" height="150" viewBox="0 0 180 150" aria-label="Compute capacity gauge, 78 percent, warning band">
+            <path d="M40.5,139.5 A70,70 0 1 1 139.5,139.5" fill="none" stroke="var(--status-warning)" stroke-opacity="0.18" stroke-width="14" stroke-linecap="round"/>
+            <path d="M40.5,139.5 A70,70 0 1 1 157.8,72.59" fill="none" stroke="var(--status-warning)" stroke-width="14" stroke-linecap="round" style="filter: drop-shadow(0 0 10px var(--status-warning));"/>
+          </svg>
+          <p class="display-lg data-mono figure">78%</p>
+          <p class="cap body-sm">42 of 54 nodes reserved</p>
+          <span class="band label-mono"><span class="dot"></span>WARNING</span>
+        </div>
+      </div>
+
+      <!-- row B: bar chart + heatmap -->
+      <div class="lc-d-row b">
+        <div class="lc-d-panel" data-depth="8" role="region" aria-labelledby="lc-d-h3">
+          <div class="lc-d-panel-head">
+            <h3 id="lc-d-h3" class="heading-md">Errors by service</h3>
+            <span class="cap body-sm">last 24h</span>
+          </div>
+          <div class="lc-d-bars">
+            <div class="lc-d-bar-row body-sm">
+              <span class="svc">api-gateway</span>
+              <span class="lc-d-bar-track"><span class="lc-d-bar-fill" style="width:100%"></span></span>
+              <span class="val data-mono">184</span>
+            </div>
+            <div class="lc-d-bar-row body-sm">
+              <span class="svc">auth-service</span>
+              <span class="lc-d-bar-track"><span class="lc-d-bar-fill" style="width:77.2%"></span></span>
+              <span class="val data-mono">142</span>
+            </div>
+            <div class="lc-d-bar-row body-sm">
+              <span class="svc">billing</span>
+              <span class="lc-d-bar-track"><span class="lc-d-bar-fill" style="width:52.7%"></span></span>
+              <span class="val data-mono">97</span>
+            </div>
+            <div class="lc-d-bar-row body-sm">
+              <span class="svc">search-index</span>
+              <span class="lc-d-bar-track"><span class="lc-d-bar-fill" style="width:33.2%"></span></span>
+              <span class="val data-mono">61</span>
+            </div>
+            <div class="lc-d-bar-row body-sm">
+              <span class="svc">notify-worker</span>
+              <span class="lc-d-bar-track"><span class="lc-d-bar-fill" style="width:15.2%"></span></span>
+              <span class="val data-mono">28</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="lc-d-panel" data-depth="8" role="region" aria-labelledby="lc-d-h4">
+          <div class="lc-d-panel-head">
+            <h3 id="lc-d-h4" class="heading-md">Activity — by hour</h3>
+            <span class="cap body-sm">this week</span>
+          </div>
+          <div class="lc-d-heatmap" role="img" aria-label="Activity heatmap by day and three-hour bucket, darker means busier">
+            <span></span>
+            <span class="collabel">00</span><span class="collabel">03</span><span class="collabel">06</span><span class="collabel">09</span>
+            <span class="collabel">12</span><span class="collabel">15</span><span class="collabel">18</span><span class="collabel">21</span>
+
+            <span class="rowlabel">Mon</span>
+            <span class="cell" style="opacity:0.110"></span><span class="cell" style="opacity:0.077"></span><span class="cell" style="opacity:0.159"></span><span class="cell" style="opacity:0.479"></span>
+            <span class="cell" style="opacity:0.752"></span><span class="cell" style="opacity:0.803"></span><span class="cell" style="opacity:0.637"></span><span class="cell" style="opacity:0.380"></span>
+
+            <span class="rowlabel">Tue</span>
+            <span class="cell" style="opacity:0.080"></span><span class="cell" style="opacity:0.104"></span><span class="cell" style="opacity:0.100"></span><span class="cell" style="opacity:0.481"></span>
+            <span class="cell" style="opacity:0.741"></span><span class="cell" style="opacity:0.849"></span><span class="cell" style="opacity:0.644"></span><span class="cell" style="opacity:0.351"></span>
+
+            <span class="rowlabel">Wed</span>
+            <span class="cell" style="opacity:0.140"></span><span class="cell" style="opacity:0.156"></span><span class="cell" style="opacity:0.152"></span><span class="cell" style="opacity:0.512"></span>
+            <span class="cell" style="opacity:0.797"></span><span class="cell" style="opacity:0.771"></span><span class="cell" style="opacity:0.718"></span><span class="cell" style="opacity:0.358"></span>
+
+            <span class="rowlabel">Thu</span>
+            <span class="cell" style="opacity:0.091"></span><span class="cell" style="opacity:0.077"></span><span class="cell" style="opacity:0.125"></span><span class="cell" style="opacity:0.554"></span>
+            <span class="cell" style="opacity:0.717"></span><span class="cell" style="opacity:0.824"></span><span class="cell" style="opacity:0.696"></span><span class="cell" style="opacity:0.367"></span>
+
+            <span class="rowlabel">Fri</span>
+            <span class="cell" style="opacity:0.132"></span><span class="cell" style="opacity:0.077"></span><span class="cell" style="opacity:0.099"></span><span class="cell" style="opacity:0.493"></span>
+            <span class="cell" style="opacity:0.767"></span><span class="cell" style="opacity:0.808"></span><span class="cell" style="opacity:0.663"></span><span class="cell" style="opacity:0.388"></span>
+
+            <span class="rowlabel">Sat</span>
+            <span class="cell" style="opacity:0.092"></span><span class="cell" style="opacity:0.077"></span><span class="cell" style="opacity:0.136"></span><span class="cell" style="opacity:0.334"></span>
+            <span class="cell" style="opacity:0.413"></span><span class="cell" style="opacity:0.483"></span><span class="cell" style="opacity:0.404"></span><span class="cell" style="opacity:0.273"></span>
+
+            <span class="rowlabel">Sun</span>
+            <span class="cell" style="opacity:0.120"></span><span class="cell" style="opacity:0.077"></span><span class="cell" style="opacity:0.155"></span><span class="cell" style="opacity:0.276"></span>
+            <span class="cell" style="opacity:0.430"></span><span class="cell" style="opacity:0.502"></span><span class="cell" style="opacity:0.367"></span><span class="cell" style="opacity:0.235"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- kanban + log stream -->
+      <div class="lc-d-kanban-wrap">
+        <div role="region" aria-labelledby="lc-d-h6">
+          <h3 id="lc-d-h6" class="heading-lg" style="margin:0 0 var(--space-4);">Board</h3>
+          <div class="lc-d-kanban">
+            <div class="lc-d-col">
+              <div class="lc-d-col-head"><span class="heading-sm">Backlog</span><span class="count data-mono">3</span></div>
+              <div class="lc-d-card">
+                <p class="body-sm title">Migrate auth to OIDC</p>
+                <div class="meta"><span class="lc-d-tag">AUTH-SERVICE</span><span class="lc-d-prio medium"><span class="shape"></span>MEDIUM</span></div>
+              </div>
+              <div class="lc-d-card">
+                <p class="body-sm title">Design spatial nav for the XR panel</p>
+                <div class="meta"><span class="lc-d-tag">DESIGN</span><span class="lc-d-prio low"><span class="shape"></span>LOW</span></div>
+              </div>
+              <div class="lc-d-card">
+                <p class="body-sm title">Audit glass blur perf on low-end GPUs</p>
+                <div class="meta"><span class="lc-d-tag">PERF</span><span class="lc-d-prio high"><span class="shape"></span>HIGH</span></div>
+              </div>
+            </div>
+            <div class="lc-d-col">
+              <div class="lc-d-col-head"><span class="heading-sm">In Progress</span><span class="count data-mono">2</span></div>
+              <div class="lc-d-card">
+                <p class="body-sm title">Stacked-area chart component</p>
+                <div class="meta"><span class="lc-d-tag">DATAVIZ</span><span class="lc-d-prio medium"><span class="shape"></span>MEDIUM</span></div>
+              </div>
+              <div class="lc-d-card">
+                <p class="body-sm title">Kanban drag reorder</p>
+                <div class="meta"><span class="lc-d-tag">FRONTEND</span><span class="lc-d-prio high"><span class="shape"></span>HIGH</span></div>
+              </div>
+            </div>
+            <div class="lc-d-col">
+              <div class="lc-d-col-head"><span class="heading-sm">Review</span><span class="count data-mono">2</span></div>
+              <div class="lc-d-card">
+                <p class="body-sm title">Dark theme contrast pass</p>
+                <div class="meta"><span class="lc-d-tag">A11Y</span><span class="lc-d-prio critical"><span class="shape"></span>CRITICAL</span></div>
+              </div>
+              <div class="lc-d-card">
+                <p class="body-sm title">Rate limiter for notify-worker</p>
+                <div class="meta"><span class="lc-d-tag">BACKEND</span><span class="lc-d-prio medium"><span class="shape"></span>MEDIUM</span></div>
+              </div>
+            </div>
+            <div class="lc-d-col">
+              <div class="lc-d-col-head"><span class="heading-sm">Done</span><span class="count data-mono">3</span></div>
+              <div class="lc-d-card">
+                <p class="body-sm title">Radial gauge component</p>
+                <div class="meta"><span class="lc-d-tag">DATAVIZ</span><span class="lc-d-prio low"><span class="shape"></span>LOW</span></div>
+              </div>
+              <div class="lc-d-card">
+                <p class="body-sm title">Cover artwork</p>
+                <div class="meta"><span class="lc-d-tag">BRAND</span><span class="lc-d-prio low"><span class="shape"></span>LOW</span></div>
+              </div>
+              <div class="lc-d-card">
+                <p class="body-sm title">Token contrast audit</p>
+                <div class="meta"><span class="lc-d-tag">A11Y</span><span class="lc-d-prio medium"><span class="shape"></span>MEDIUM</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lc-d-panel" data-depth="10" role="region" aria-labelledby="lc-d-h5">
+          <div class="lc-d-panel-head"><h3 id="lc-d-h5" class="heading-md">Log stream</h3><span class="cap body-sm">live</span></div>
+          <div class="lc-d-log">
+            <div class="lc-d-log-row"><span class="lc-d-log-dot critical"></span><span class="lc-d-log-time">23:58:12</span><span class="lc-d-log-msg body-sm">5xx spike on billing checkout<span class="svc">billing</span></span></div>
+            <div class="lc-d-log-row"><span class="lc-d-log-dot warning"></span><span class="lc-d-log-time">23:51:04</span><span class="lc-d-log-msg body-sm">Latency p95 above 150ms<span class="svc">api-gateway</span></span></div>
+            <div class="lc-d-log-row"><span class="lc-d-log-dot good"></span><span class="lc-d-log-time">23:44:37</span><span class="lc-d-log-msg body-sm">Auto-scale completed, +3 nodes<span class="svc">infra</span></span></div>
+            <div class="lc-d-log-row"><span class="lc-d-log-dot warning"></span><span class="lc-d-log-time">23:38:02</span><span class="lc-d-log-msg body-sm">Cache hit rate dropped to 61%<span class="svc">search-index</span></span></div>
+            <div class="lc-d-log-row"><span class="lc-d-log-dot good"></span><span class="lc-d-log-time">23:29:55</span><span class="lc-d-log-msg body-sm">Deploy notify-worker v2.3.1 succeeded<span class="svc">notify-worker</span></span></div>
+            <div class="lc-d-log-row"><span class="lc-d-log-dot serious"></span><span class="lc-d-log-time">23:21:18</span><span class="lc-d-log-msg body-sm">Auth token refresh failures rising<span class="svc">auth-service</span></span></div>
+            <div class="lc-d-log-row"><span class="lc-d-log-dot good"></span><span class="lc-d-log-time">23:14:40</span><span class="lc-d-log-msg body-sm">Nightly backup completed<span class="svc">infra</span></span></div>
+            <div class="lc-d-log-row"><span class="lc-d-log-dot good"></span><span class="lc-d-log-time">23:07:09</span><span class="lc-d-log-msg body-sm">SLA check passed at 99.95%<span class="svc">platform</span></span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+<script>
+(function () {
+  var toggle = document.getElementById('lc-d-theme-toggle');
+  var root = document.documentElement;
+  function syncTheme() {
+    var isDark = root.getAttribute('data-theme') === 'dark';
+    toggle.classList.toggle('is-dark', isDark);
+    toggle.setAttribute('aria-pressed', isDark ? 'true' : 'false');
+  }
+  toggle.addEventListener('click', function () {
+    var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    syncTheme();
+  });
+  syncTheme();
+
+  Array.prototype.forEach.call(document.querySelectorAll('.lc-d-range button'), function (btn) {
+    btn.addEventListener('click', function () {
+      Array.prototype.forEach.call(document.querySelectorAll('.lc-d-range button'), function (b) { b.classList.remove('on'); b.setAttribute('aria-pressed', 'false'); });
+      btn.classList.add('on');
+      btn.setAttribute('aria-pressed', 'true');
+    });
+  });
+
+  var scene = document.getElementById('lc-d-scene');
+  var layers = document.querySelectorAll('[data-depth]');
+  scene.addEventListener('mousemove', function (e) {
+    var rect = scene.getBoundingClientRect();
+    var nx = (e.clientX - rect.left) / rect.width - 0.5;
+    var ny = (e.clientY - rect.top) / rect.height - 0.5;
+    layers.forEach(function (el) {
+      var depth = parseFloat(el.getAttribute('data-depth'));
+      el.style.transform = 'translate(' + (nx * depth) + 'px,' + (ny * depth) + 'px)';
+    });
+  });
+  scene.addEventListener('mouseleave', function () {
+    layers.forEach(function (el) { el.style.transform = 'translate(0,0)'; });
+  });
+})();
+</script>
+</body>
+</html>

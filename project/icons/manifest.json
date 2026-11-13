@@ -1,0 +1,6923 @@
+{
+  "name": "Lucent icon set",
+  "source": "1,383 single-ink outline icons, 24x24 viewBox, stroke-width 1.5 (normalized), fill:none, stroke:currentColor -- inherits color from CSS, one ink token per icon per project/README.md's rule.",
+  "sprite": "icon-sprite.svg",
+  "count": 1383,
+  "icons": [
+    {
+      "id": "accessibility",
+      "family": "accessibility",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "accessibility-sign",
+      "family": "accessibility",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "accessibility-tech",
+      "family": "accessibility",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "activity",
+      "family": "activity",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "adobe-after-effects",
+      "family": "adobe",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "adobe-illustrator",
+      "family": "adobe",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "adobe-indesign",
+      "family": "adobe",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "adobe-lightroom",
+      "family": "adobe",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "adobe-photoshop",
+      "family": "adobe",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "adobe-xd",
+      "family": "adobe",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "african-tree",
+      "family": "african",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "agile",
+      "family": "agile",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "air-conditioner",
+      "family": "air",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "airplane",
+      "family": "airplane",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "airplane-helix",
+      "family": "airplane",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "airplane-helix-45deg",
+      "family": "airplane",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "airplane-off",
+      "family": "airplane",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "airplane-rotation",
+      "family": "airplane",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "airplay",
+      "family": "airplay",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "alarm",
+      "family": "alarm",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "album",
+      "family": "album",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "album-carousel",
+      "family": "album",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "album-list",
+      "family": "album",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "album-open",
+      "family": "album",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "align-bottom-box",
+      "family": "align",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "align-center",
+      "family": "align",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "align-horizontal-centers",
+      "family": "align",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "align-horizontal-spacing",
+      "family": "align",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "align-justify",
+      "family": "align",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "align-left",
+      "family": "align",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "align-left-box",
+      "family": "align",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "align-right",
+      "family": "align",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "align-right-box",
+      "family": "align",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "align-top-box",
+      "family": "align",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "align-vertical-centers",
+      "family": "align",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "align-vertical-spacing",
+      "family": "align",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "angle-tool",
+      "family": "angle",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "antenna",
+      "family": "antenna",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "antenna-off",
+      "family": "antenna",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "antenna-signal",
+      "family": "antenna",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "antenna-signal-tag",
+      "family": "antenna",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "app-notification",
+      "family": "app",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "app-store",
+      "family": "app",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "app-window",
+      "family": "app",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "apple",
+      "family": "apple",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "apple-half",
+      "family": "apple",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "apple-imac-2021",
+      "family": "apple",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "apple-imac-2021-side",
+      "family": "apple",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "apple-mac",
+      "family": "apple",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "apple-shortcuts",
+      "family": "apple",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "apple-swift",
+      "family": "apple",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "apple-wallet",
+      "family": "apple",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "ar-tag",
+      "family": "ar",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "arc-3d",
+      "family": "arc",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "arc-3d-center-point",
+      "family": "arc",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "arcade",
+      "family": "arcade",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "archery",
+      "family": "archery",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "archery-match",
+      "family": "archery",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "archive",
+      "family": "archive",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "area-search",
+      "family": "area",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "arrow-archery",
+      "family": "arrow",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "arrow-down",
+      "family": "arrow",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "arrow-down-circle",
+      "family": "arrow",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "arrow-down-left",
+      "family": "arrow",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "arrow-down-left-circle",
+      "family": "arrow",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "arrow-down-left-square",
+      "family": "arrow",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "arrow-down-right",
+      "family": "arrow",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "arrow-down-right-circle",
+      "family": "arrow",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "arrow-down-right-square",
+      "family": "arrow",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "arrow-down-tag",
+      "family": "arrow",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "arrow-email-forward",
+      "family": "arrow",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "arrow-enlarge-tag",
+      "family": "arrow",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "arrow-left",
+      "family": "arrow",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "arrow-left-circle",
+      "family": "arrow",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "arrow-left-tag",
+      "family": "arrow",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "arrow-reduce-tag",
+      "family": "arrow",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "arrow-right",
+      "family": "arrow",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "arrow-right-circle",
+      "family": "arrow",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "arrow-right-tag",
+      "family": "arrow",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "arrow-separate",
+      "family": "arrow",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "arrow-separate-vertical",
+      "family": "arrow",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "arrow-union",
+      "family": "arrow",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "arrow-union-vertical",
+      "family": "arrow",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "arrow-up",
+      "family": "arrow",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "arrow-up-circle",
+      "family": "arrow",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "arrow-up-left",
+      "family": "arrow",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "arrow-up-left-circle",
+      "family": "arrow",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "arrow-up-left-square",
+      "family": "arrow",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "arrow-up-right",
+      "family": "arrow",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "arrow-up-right-circle",
+      "family": "arrow",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "arrow-up-right-square",
+      "family": "arrow",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "arrow-up-tag",
+      "family": "arrow",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "arrows-up-from-line",
+      "family": "arrows",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "asana",
+      "family": "asana",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "asterisk",
+      "family": "asterisk",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "at-sign",
+      "family": "at",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "at-sign-circle",
+      "family": "at",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "atom",
+      "family": "atom",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "attachment",
+      "family": "attachment",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "augmented-reality",
+      "family": "augmented",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "auto-flash",
+      "family": "auto",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "avi-format",
+      "family": "avi",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "axes",
+      "family": "axes",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "backward-15-seconds",
+      "family": "backward",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "badge-check",
+      "family": "badge",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "bag",
+      "family": "bag",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "balcony",
+      "family": "balcony",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "bank",
+      "family": "bank",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "barcode",
+      "family": "barcode",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "basketball",
+      "family": "basketball",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "basketball-field",
+      "family": "basketball",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "bathroom",
+      "family": "bathroom",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "battery-25",
+      "family": "battery",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "battery-50",
+      "family": "battery",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "battery-75",
+      "family": "battery",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "battery-charging",
+      "family": "battery",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "battery-empty",
+      "family": "battery",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "battery-full",
+      "family": "battery",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "battery-indicator",
+      "family": "battery",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "battery-slash",
+      "family": "battery",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "battery-warning",
+      "family": "battery",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "bbq",
+      "family": "bbq",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "beach-bag",
+      "family": "beach",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "bed",
+      "family": "bed",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "bed-ready",
+      "family": "bed",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "behance",
+      "family": "behance",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "behance-tag",
+      "family": "behance",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "bell",
+      "family": "bell",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "bell-notification",
+      "family": "bell",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "bell-off",
+      "family": "bell",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "bicycle",
+      "family": "bicycle",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "bin",
+      "family": "bin",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "bin-full",
+      "family": "bin",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "bin-half",
+      "family": "bin",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "bin-minus-in",
+      "family": "bin",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "bin-plus-in",
+      "family": "bin",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "binocular",
+      "family": "binocular",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "birthday-cake",
+      "family": "birthday",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "bishop",
+      "family": "bishop",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "bitbucket",
+      "family": "bitbucket",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "bitcoin-circle",
+      "family": "bitcoin",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "bitcoin-rotate-out",
+      "family": "bitcoin",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "bluetooth",
+      "family": "bluetooth",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "bluetooth-tag",
+      "family": "bluetooth",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "bold",
+      "family": "bold",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "bold-square",
+      "family": "bold",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "bonfire",
+      "family": "bonfire",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "book",
+      "family": "book",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "book-lock",
+      "family": "book",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "book-stack",
+      "family": "book",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "bookmark",
+      "family": "bookmark",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "bookmark-book",
+      "family": "bookmark",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "bookmark-circle",
+      "family": "bookmark",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "border-bl",
+      "family": "border",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "border-bottom",
+      "family": "border",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "border-br",
+      "family": "border",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "border-inner",
+      "family": "border",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "border-left",
+      "family": "border",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "border-out",
+      "family": "border",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "border-right",
+      "family": "border",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "border-tl",
+      "family": "border",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "border-top",
+      "family": "border",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "border-tr",
+      "family": "border",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "bounce-left",
+      "family": "bounce",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "bounce-right",
+      "family": "bounce",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "bowling-ball",
+      "family": "bowling",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "box",
+      "family": "box",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "box-3d-center",
+      "family": "box",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "box-3d-point",
+      "family": "box",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "box-3d-three-points",
+      "family": "box",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "box-iso",
+      "family": "box",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "boxing-glove",
+      "family": "boxing",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "brain",
+      "family": "brain",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "brain-electricity",
+      "family": "brain",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "brain-research",
+      "family": "brain",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "brain-warning",
+      "family": "brain",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "bread-slice",
+      "family": "bread",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "bridge-3d",
+      "family": "bridge",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "bridge-surface",
+      "family": "bridge",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "bright-crown",
+      "family": "bright",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "bright-star",
+      "family": "bright",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "brightness",
+      "family": "brightness",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "brightness-window",
+      "family": "brightness",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "bubble-download",
+      "family": "bubble",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "bubble-income",
+      "family": "bubble",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "bubble-outcome",
+      "family": "bubble",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "bubble-search",
+      "family": "bubble",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "bubble-star",
+      "family": "bubble",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "bubble-upload",
+      "family": "bubble",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "bubble-warning",
+      "family": "bubble",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "bubble-xmark",
+      "family": "bubble",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "bug",
+      "family": "bug",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "building",
+      "family": "building",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "bus",
+      "family": "bus",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "bus-green",
+      "family": "bus",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "bus-stop",
+      "family": "bus",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "c-square",
+      "family": "c",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "cable-tag",
+      "family": "cable",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "calculator",
+      "family": "calculator",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "calendar",
+      "family": "calendar",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "calendar-arrow-down",
+      "family": "calendar",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "calendar-arrow-up",
+      "family": "calendar",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "calendar-check",
+      "family": "calendar",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "calendar-minus",
+      "family": "calendar",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "calendar-plus",
+      "family": "calendar",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "calendar-rotate",
+      "family": "calendar",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "calendar-xmark",
+      "family": "calendar",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "camera",
+      "family": "camera",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "candlestick-chart",
+      "family": "candlestick",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "car",
+      "family": "car",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "card-lock",
+      "family": "card",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "card-no-access",
+      "family": "card",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "card-reader",
+      "family": "card",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "card-shield",
+      "family": "card",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "card-wallet",
+      "family": "card",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "cart",
+      "family": "cart",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "cart-alt",
+      "family": "cart",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "cart-minus",
+      "family": "cart",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "cart-plus",
+      "family": "cart",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "cash",
+      "family": "cash",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "cell-2x2",
+      "family": "cell",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "cellar",
+      "family": "cellar",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "center-align",
+      "family": "center",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "chat-bubble",
+      "family": "chat",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "chat-bubble-check",
+      "family": "chat",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "chat-bubble-empty",
+      "family": "chat",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "chat-bubble-question",
+      "family": "chat",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "chat-bubble-translate",
+      "family": "chat",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "chat-bubble-warning",
+      "family": "chat",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "chat-bubble-xmark",
+      "family": "chat",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "chat-lines",
+      "family": "chat",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "chat-minus-in",
+      "family": "chat",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "chat-plus-in",
+      "family": "chat",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "check",
+      "family": "check",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "check-circle",
+      "family": "check",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "check-square",
+      "family": "check",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "chocolate",
+      "family": "chocolate",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "chromecast",
+      "family": "chromecast",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "chromecast-active",
+      "family": "chromecast",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "church",
+      "family": "church",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "church-side",
+      "family": "church",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "cigarette-slash",
+      "family": "cigarette",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "cinema-old",
+      "family": "cinema",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "circle",
+      "family": "circle",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "circle-spark",
+      "family": "circle",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "city",
+      "family": "city",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "clipboard-check",
+      "family": "clipboard",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "clock",
+      "family": "clock",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "clock-rotate-right",
+      "family": "clock",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "closed-captions-tag",
+      "family": "closed",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "closet",
+      "family": "closet",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "cloud",
+      "family": "cloud",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "cloud-bookmark",
+      "family": "cloud",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "cloud-check",
+      "family": "cloud",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "cloud-desync",
+      "family": "cloud",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "cloud-download",
+      "family": "cloud",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "cloud-square",
+      "family": "cloud",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "cloud-sunny",
+      "family": "cloud",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "cloud-sync",
+      "family": "cloud",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "cloud-upload",
+      "family": "cloud",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "cloud-xmark",
+      "family": "cloud",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "code",
+      "family": "code",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "code-brackets",
+      "family": "code",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "code-brackets-square",
+      "family": "code",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "codepen",
+      "family": "codepen",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "coffee-cup",
+      "family": "coffee",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "coin-slash",
+      "family": "coin",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "coins",
+      "family": "coins",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "coins-swap",
+      "family": "coins",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "collage-frame",
+      "family": "collage",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "collapse",
+      "family": "collapse",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "color-filter",
+      "family": "color",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "color-picker",
+      "family": "color",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "color-wheel",
+      "family": "color",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "combine",
+      "family": "combine",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "commodity",
+      "family": "commodity",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "community",
+      "family": "community",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "comp-align-bottom",
+      "family": "comp",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "comp-align-left",
+      "family": "comp",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "comp-align-right",
+      "family": "comp",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "comp-align-top",
+      "family": "comp",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "compact-disc",
+      "family": "compact",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "compass",
+      "family": "compass",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "component",
+      "family": "component",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "compress",
+      "family": "compress",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "compress-lines",
+      "family": "compress",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "computer",
+      "family": "computer",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "constrained-surface",
+      "family": "constrained",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "consumable",
+      "family": "consumable",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "contactless",
+      "family": "contactless",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "control-slider",
+      "family": "control",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "cookie",
+      "family": "cookie",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "cooling-square",
+      "family": "cooling",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "copy",
+      "family": "copy",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "copyright",
+      "family": "copyright",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "corner-bottom-left",
+      "family": "corner",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "corner-bottom-right",
+      "family": "corner",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "corner-top-left",
+      "family": "corner",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "corner-top-right",
+      "family": "corner",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "cpu",
+      "family": "cpu",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "cpu-warning",
+      "family": "cpu",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "cracked-egg",
+      "family": "cracked",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "creative-commons",
+      "family": "creative",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "credit-card",
+      "family": "credit",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "credit-card-slash",
+      "family": "credit",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "credit-cards",
+      "family": "credit",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "crib",
+      "family": "crib",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "crop",
+      "family": "crop",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "crop-rotate-bl",
+      "family": "crop",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "crop-rotate-br",
+      "family": "crop",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "crop-rotate-tl",
+      "family": "crop",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "crop-rotate-tr",
+      "family": "crop",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "crown",
+      "family": "crown",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "crown-circle",
+      "family": "crown",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "css3",
+      "family": "css3",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "cube",
+      "family": "cube",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "cube-bandage",
+      "family": "cube",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "cube-cut-with-curve",
+      "family": "cube",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "cube-dots",
+      "family": "cube",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "cube-hole",
+      "family": "cube",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "cube-replace-face",
+      "family": "cube",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "cube-scan",
+      "family": "cube",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "cursor-pointer",
+      "family": "cursor",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "curve-array",
+      "family": "curve",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "cut",
+      "family": "cut",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "cutlery",
+      "family": "cutlery",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "cycling",
+      "family": "cycling",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "cylinder",
+      "family": "cylinder",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "dash-flag",
+      "family": "dash",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "dashboard",
+      "family": "dashboard",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "dashboard-dots",
+      "family": "dashboard",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "dashboard-speed",
+      "family": "dashboard",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "data-transfer-both",
+      "family": "data",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "data-transfer-check",
+      "family": "data",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "data-transfer-down",
+      "family": "data",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "data-transfer-up",
+      "family": "data",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "data-transfer-warning",
+      "family": "data",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "database",
+      "family": "database",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "database-backup",
+      "family": "database",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "database-check",
+      "family": "database",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "database-export",
+      "family": "database",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "database-monitor",
+      "family": "database",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "database-restore",
+      "family": "database",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "database-script",
+      "family": "database",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "database-script-minus",
+      "family": "database",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "database-script-plus",
+      "family": "database",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "database-search",
+      "family": "database",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "database-settings",
+      "family": "database",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "database-star",
+      "family": "database",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "database-stats",
+      "family": "database",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "database-tag",
+      "family": "database",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "database-warning",
+      "family": "database",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "database-xmark",
+      "family": "database",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "de-compress",
+      "family": "de",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "delivery",
+      "family": "delivery",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "delivery-truck",
+      "family": "delivery",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "depth",
+      "family": "depth",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "design-nib",
+      "family": "design",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "design-pencil",
+      "family": "design",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "desk",
+      "family": "desk",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "developer",
+      "family": "developer",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "dew-point",
+      "family": "dew",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "dialpad",
+      "family": "dialpad",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "diameter",
+      "family": "diameter",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "dice-five",
+      "family": "dice",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "dice-four",
+      "family": "dice",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "dice-one",
+      "family": "dice",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "dice-six",
+      "family": "dice",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "dice-three",
+      "family": "dice",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "dice-two",
+      "family": "dice",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "dimmer-switch",
+      "family": "dimmer",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "director-chair",
+      "family": "director",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "discord",
+      "family": "discord",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "dishwasher",
+      "family": "dishwasher",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "display-4k",
+      "family": "display",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "divide",
+      "family": "divide",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "divide-three",
+      "family": "divide",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "dna",
+      "family": "dna",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "dns",
+      "family": "dns",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "doc-magnifying-glass",
+      "family": "doc",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "doc-magnifying-glass-in",
+      "family": "doc",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "doc-star",
+      "family": "doc",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "doc-star-in",
+      "family": "doc",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "dogecoin-circle",
+      "family": "dogecoin",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "dogecoin-rotate-out",
+      "family": "dogecoin",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "dollar",
+      "family": "dollar",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "dollar-circle",
+      "family": "dollar",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "domotic-warning",
+      "family": "domotic",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "donate",
+      "family": "donate",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "dot-arrow-down",
+      "family": "dot",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "dot-arrow-left",
+      "family": "dot",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "dot-arrow-right",
+      "family": "dot",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "dot-arrow-up",
+      "family": "dot",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "dots-grid-3x3",
+      "family": "dots",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "double-check",
+      "family": "double",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "download",
+      "family": "download",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "download-circle",
+      "family": "download",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "download-data-window",
+      "family": "download",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "download-square",
+      "family": "download",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "drag",
+      "family": "drag",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "drag-hand-gesture",
+      "family": "drag",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "drawer",
+      "family": "drawer",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "dribbble",
+      "family": "dribbble",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "drone",
+      "family": "drone",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "drone-charge-full",
+      "family": "drone",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "drone-charge-half",
+      "family": "drone",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "drone-charge-low",
+      "family": "drone",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "drone-check",
+      "family": "drone",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "drone-landing",
+      "family": "drone",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "drone-refresh",
+      "family": "drone",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "drone-take-off",
+      "family": "drone",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "drone-xmark",
+      "family": "drone",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "droplet",
+      "family": "droplet",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "droplet-check",
+      "family": "droplet",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "droplet-half",
+      "family": "droplet",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "droplet-snow-flake-in",
+      "family": "droplet",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "ease-curve-control-points",
+      "family": "ease",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "ease-in",
+      "family": "ease",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "ease-in-control-point",
+      "family": "ease",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "ease-in-out",
+      "family": "ease",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "ease-out",
+      "family": "ease",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "ease-out-control-point",
+      "family": "ease",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "ecology-book",
+      "family": "ecology",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "edit",
+      "family": "edit",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "edit-pencil",
+      "family": "edit",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "egg",
+      "family": "egg",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "eject",
+      "family": "eject",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "electronics-chip",
+      "family": "electronics",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "electronics-transistor",
+      "family": "electronics",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "elevator",
+      "family": "elevator",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "ellipse-3d",
+      "family": "ellipse",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "ellipse-3d-three-points",
+      "family": "ellipse",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "emoji",
+      "family": "emoji",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "emoji-ball",
+      "family": "emoji",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "emoji-blink-left",
+      "family": "emoji",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "emoji-blink-right",
+      "family": "emoji",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "emoji-look-down",
+      "family": "emoji",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "emoji-look-left",
+      "family": "emoji",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "emoji-look-right",
+      "family": "emoji",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "emoji-look-up",
+      "family": "emoji",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "emoji-puzzled",
+      "family": "emoji",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "emoji-quite",
+      "family": "emoji",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "emoji-really",
+      "family": "emoji",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "emoji-sad",
+      "family": "emoji",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "emoji-satisfied",
+      "family": "emoji",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "emoji-sing-left",
+      "family": "emoji",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "emoji-sing-left-note",
+      "family": "emoji",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "emoji-sing-right",
+      "family": "emoji",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "emoji-sing-right-note",
+      "family": "emoji",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "emoji-surprise",
+      "family": "emoji",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "emoji-surprise-alt",
+      "family": "emoji",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "emoji-talking-angry",
+      "family": "emoji",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "emoji-talking-happy",
+      "family": "emoji",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "emoji-think-left",
+      "family": "emoji",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "emoji-think-right",
+      "family": "emoji",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "empty-page",
+      "family": "empty",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "energy-usage-window",
+      "family": "energy",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "enlarge",
+      "family": "enlarge",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "erase",
+      "family": "erase",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "ethereum-circle",
+      "family": "ethereum",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "ethereum-rotate-out",
+      "family": "ethereum",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "euro",
+      "family": "euro",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "euro-square",
+      "family": "euro",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "ev-charge",
+      "family": "ev",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "ev-charge-alt",
+      "family": "ev",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "ev-plug",
+      "family": "ev",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "ev-plug-charging",
+      "family": "ev",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "ev-plug-xmark",
+      "family": "ev",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "ev-station",
+      "family": "ev",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "ev-tag",
+      "family": "ev",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "exclude",
+      "family": "exclude",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "expand",
+      "family": "expand",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "expand-lines",
+      "family": "expand",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "extrude",
+      "family": "extrude",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "eye",
+      "family": "eye",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "eye-closed",
+      "family": "eye",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "f-square",
+      "family": "f",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "face-3d-draft",
+      "family": "face",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "face-id",
+      "family": "face",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "facebook",
+      "family": "facebook",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "facebook-tag",
+      "family": "facebook",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "facetime",
+      "family": "facetime",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "farm",
+      "family": "farm",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "fast-arrow-down",
+      "family": "fast",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "fast-arrow-down-square",
+      "family": "fast",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "fast-arrow-left",
+      "family": "fast",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "fast-arrow-left-square",
+      "family": "fast",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "fast-arrow-right",
+      "family": "fast",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "fast-arrow-right-square",
+      "family": "fast",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "fast-arrow-up",
+      "family": "fast",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "fast-arrow-up-square",
+      "family": "fast",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "fast-down-circle",
+      "family": "fast",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "fast-left-circle",
+      "family": "fast",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "fast-right-circle",
+      "family": "fast",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "fast-up-circle",
+      "family": "fast",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "favourite-book",
+      "family": "favourite",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "favourite-window",
+      "family": "favourite",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "female",
+      "family": "female",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "figma",
+      "family": "figma",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "file-not-found",
+      "family": "file",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "fill-color",
+      "family": "fill",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "fillet-3d",
+      "family": "fillet",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "filter",
+      "family": "filter",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "filter-alt",
+      "family": "filter",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "filter-list",
+      "family": "filter",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "filter-list-circle",
+      "family": "filter",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "finder",
+      "family": "finder",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "fingerprint",
+      "family": "fingerprint",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "fingerprint-check-circle",
+      "family": "fingerprint",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "fingerprint-circle",
+      "family": "fingerprint",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "fingerprint-lock-circle",
+      "family": "fingerprint",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "fingerprint-scan",
+      "family": "fingerprint",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "fingerprint-square",
+      "family": "fingerprint",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "fingerprint-window",
+      "family": "fingerprint",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "fingerprint-xmark-circle",
+      "family": "fingerprint",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "fire-flame",
+      "family": "fire",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "fish",
+      "family": "fish",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "fishing",
+      "family": "fishing",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "flare",
+      "family": "flare",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "flash",
+      "family": "flash",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "flash-off",
+      "family": "flash",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "flask",
+      "family": "flask",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "flip",
+      "family": "flip",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "flip-reverse",
+      "family": "flip",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "floppy-disk",
+      "family": "floppy",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "floppy-disk-arrow-in",
+      "family": "floppy",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "floppy-disk-arrow-out",
+      "family": "floppy",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "flower",
+      "family": "flower",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "fog",
+      "family": "fog",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "folder",
+      "family": "folder",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "folder-minus",
+      "family": "folder",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "folder-plus",
+      "family": "folder",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "folder-settings",
+      "family": "folder",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "folder-warning",
+      "family": "folder",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "font-question",
+      "family": "font",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "football",
+      "family": "football",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "football-ball",
+      "family": "football",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "forward",
+      "family": "forward",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "forward-15-seconds",
+      "family": "forward",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "forward-message",
+      "family": "forward",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "frame",
+      "family": "frame",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "frame-alt",
+      "family": "frame",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "frame-alt-empty",
+      "family": "frame",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "frame-minus-in",
+      "family": "frame",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "frame-plus-in",
+      "family": "frame",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "frame-select",
+      "family": "frame",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "frame-simple",
+      "family": "frame",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "frame-tool",
+      "family": "frame",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "fridge",
+      "family": "fridge",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "fx",
+      "family": "fx",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "fx-tag",
+      "family": "fx",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "gamepad",
+      "family": "gamepad",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "garage",
+      "family": "garage",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "gas",
+      "family": "gas",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "gas-tank",
+      "family": "gas",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "gas-tank-droplet",
+      "family": "gas",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "gif-format",
+      "family": "gif",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "gift",
+      "family": "gift",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "git",
+      "family": "git",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "git-branch",
+      "family": "git",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "git-cherry-pick-commit",
+      "family": "git",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "git-commit",
+      "family": "git",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "git-compare",
+      "family": "git",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "git-fork",
+      "family": "git",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "git-merge",
+      "family": "git",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "git-pull-request",
+      "family": "git",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "git-pull-request-closed",
+      "family": "git",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "github",
+      "family": "github",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "github-circle",
+      "family": "github",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "gitlab-full",
+      "family": "gitlab",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "glass-empty",
+      "family": "glass",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "glass-fragile",
+      "family": "glass",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "glass-half",
+      "family": "glass",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "glass-half-alt",
+      "family": "glass",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "glasses",
+      "family": "glasses",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "globe",
+      "family": "globe",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "golf",
+      "family": "golf",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "google",
+      "family": "google",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "google-circle",
+      "family": "google",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "google-docs",
+      "family": "google",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "google-drive",
+      "family": "google",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "google-drive-check",
+      "family": "google",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "google-drive-sync",
+      "family": "google",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "google-drive-warning",
+      "family": "google",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "google-home",
+      "family": "google",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "google-one",
+      "family": "google",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "gps",
+      "family": "gps",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "graduation-cap",
+      "family": "graduation",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "graph-down",
+      "family": "graph",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "graph-up",
+      "family": "graph",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "grid-minus",
+      "family": "grid",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "grid-plus",
+      "family": "grid",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "grid-xmark",
+      "family": "grid",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "group",
+      "family": "group",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "gym",
+      "family": "gym",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "h-square",
+      "family": "h",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "half-cookie",
+      "family": "half",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "half-moon",
+      "family": "half",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "hammer",
+      "family": "hammer",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "hand-brake",
+      "family": "hand",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "hand-card",
+      "family": "hand",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "hand-cash",
+      "family": "hand",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "hand-contactless",
+      "family": "hand",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "handbag",
+      "family": "handbag",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "hard-drive",
+      "family": "hard",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "hashtag",
+      "family": "hashtag",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "hat",
+      "family": "hat",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "hd",
+      "family": "hd",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "hd-display",
+      "family": "hd",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "hdr",
+      "family": "hdr",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "headset",
+      "family": "headset",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "headset-bolt",
+      "family": "headset",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "headset-help",
+      "family": "headset",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "headset-warning",
+      "family": "headset",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "health-shield",
+      "family": "health",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "healthcare",
+      "family": "healthcare",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "heart",
+      "family": "heart",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "heart-arrow-down",
+      "family": "heart",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "heating-square",
+      "family": "heating",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "heavy-rain",
+      "family": "heavy",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "help-circle",
+      "family": "help",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "help-square",
+      "family": "help",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "heptagon",
+      "family": "heptagon",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "hexagon",
+      "family": "hexagon",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "hexagon-dice",
+      "family": "hexagon",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "hexagon-plus",
+      "family": "hexagon",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "historic-shield",
+      "family": "historic",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "historic-shield-alt",
+      "family": "historic",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "home",
+      "family": "home",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "home-alt",
+      "family": "home",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "home-alt-slim",
+      "family": "home",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "home-alt-slim-horiz",
+      "family": "home",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "home-hospital",
+      "family": "home",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "home-sale",
+      "family": "home",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "home-secure",
+      "family": "home",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "home-shield",
+      "family": "home",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "home-simple",
+      "family": "home",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "home-simple-door",
+      "family": "home",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "home-table",
+      "family": "home",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "home-temperature-in",
+      "family": "home",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "home-temperature-out",
+      "family": "home",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "home-user",
+      "family": "home",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "horiz-distribution-left",
+      "family": "horiz",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "horiz-distribution-right",
+      "family": "horiz",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "horizontal-merge",
+      "family": "horizontal",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "horizontal-split",
+      "family": "horizontal",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "hospital",
+      "family": "hospital",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "hospital-circle",
+      "family": "hospital",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "hot-air-balloon",
+      "family": "hot",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "hourglass",
+      "family": "hourglass",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "house-rooms",
+      "family": "house",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "html5",
+      "family": "html5",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "ice-cream",
+      "family": "ice",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "iconoir",
+      "family": "iconoir",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "import",
+      "family": "import",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "inclination",
+      "family": "inclination",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "industry",
+      "family": "industry",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "infinite",
+      "family": "infinite",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "info-circle",
+      "family": "info",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "input-field",
+      "family": "input",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "input-output",
+      "family": "input",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "input-search",
+      "family": "input",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "instagram",
+      "family": "instagram",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "internet",
+      "family": "internet",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "intersect",
+      "family": "intersect",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "intersect-alt",
+      "family": "intersect",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "ios-settings",
+      "family": "ios",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "ip-address-tag",
+      "family": "ip",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "iris-scan",
+      "family": "iris",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "italic",
+      "family": "italic",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "italic-square",
+      "family": "italic",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "jellyfish",
+      "family": "jellyfish",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "journal",
+      "family": "journal",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "journal-page",
+      "family": "journal",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "jpeg-format",
+      "family": "jpeg",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "jpg-format",
+      "family": "jpg",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "kanban-board",
+      "family": "kanban",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "key",
+      "family": "key",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "key-back",
+      "family": "key",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "key-command",
+      "family": "key",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "key-minus",
+      "family": "key",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "key-plus",
+      "family": "key",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "key-xmark",
+      "family": "key",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "keyframe",
+      "family": "keyframe",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "keyframe-align-center",
+      "family": "keyframe",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "keyframe-align-horizontal",
+      "family": "keyframe",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "keyframe-align-vertical",
+      "family": "keyframe",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "keyframe-minus",
+      "family": "keyframe",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "keyframe-minus-in",
+      "family": "keyframe",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "keyframe-plus",
+      "family": "keyframe",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "keyframe-plus-in",
+      "family": "keyframe",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "keyframe-position",
+      "family": "keyframe",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "keyframes",
+      "family": "keyframes",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "keyframes-couple",
+      "family": "keyframes",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "keyframes-minus",
+      "family": "keyframes",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "keyframes-plus",
+      "family": "keyframes",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "label",
+      "family": "label",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "lamp",
+      "family": "lamp",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "language",
+      "family": "language",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "laptop",
+      "family": "laptop",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "laptop-charging",
+      "family": "laptop",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "laptop-dev-mode",
+      "family": "laptop",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "laptop-fix",
+      "family": "laptop",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "laptop-warning",
+      "family": "laptop",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "layout-left",
+      "family": "layout",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "layout-right",
+      "family": "layout",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "leaderboard",
+      "family": "leaderboard",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "leaderboard-star",
+      "family": "leaderboard",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "leaf",
+      "family": "leaf",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "learning",
+      "family": "learning",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "lens",
+      "family": "lens",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "lens-plus",
+      "family": "lens",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "lifebelt",
+      "family": "lifebelt",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "light-bulb",
+      "family": "light",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "light-bulb-off",
+      "family": "light",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "light-bulb-on",
+      "family": "light",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "line-space",
+      "family": "line",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "linear",
+      "family": "linear",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "link",
+      "family": "link",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "link-slash",
+      "family": "link",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "link-xmark",
+      "family": "link",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "linkedin",
+      "family": "linkedin",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "linux",
+      "family": "linux",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "list",
+      "family": "list",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "list-select",
+      "family": "list",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "litecoin-circle",
+      "family": "litecoin",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "litecoin-rotate-out",
+      "family": "litecoin",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "lock",
+      "family": "lock",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "lock-slash",
+      "family": "lock",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "lock-square",
+      "family": "lock",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "loft-3d",
+      "family": "loft",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "log-in",
+      "family": "log",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "log-no-access",
+      "family": "log",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "log-out",
+      "family": "log",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "long-arrow-down-left",
+      "family": "long",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "long-arrow-down-right",
+      "family": "long",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "long-arrow-left-down",
+      "family": "long",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "long-arrow-left-up",
+      "family": "long",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "long-arrow-right-down",
+      "family": "long",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "long-arrow-right-up",
+      "family": "long",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "long-arrow-up-left",
+      "family": "long",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "long-arrow-up-right",
+      "family": "long",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "lot-of-cash",
+      "family": "lot",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "lullaby",
+      "family": "lullaby",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "mac-control-key",
+      "family": "mac",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "mac-dock",
+      "family": "mac",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "mac-option-key",
+      "family": "mac",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "mac-os-window",
+      "family": "mac",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "magic-wand",
+      "family": "magic",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "magnet",
+      "family": "magnet",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "magnet-energy",
+      "family": "magnet",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "mail",
+      "family": "mail",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "mail-in",
+      "family": "mail",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "mail-open",
+      "family": "mail",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "mail-out",
+      "family": "mail",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "male",
+      "family": "male",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "map",
+      "family": "map",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "map-pin",
+      "family": "map",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "map-pin-minus",
+      "family": "map",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "map-pin-plus",
+      "family": "map",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "map-pin-xmark",
+      "family": "map",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "map-xmark",
+      "family": "map",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "maps-arrow",
+      "family": "maps",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "maps-arrow-diagonal",
+      "family": "maps",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "maps-arrow-xmark",
+      "family": "maps",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "maps-go-straight",
+      "family": "maps",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "maps-turn-back",
+      "family": "maps",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "maps-turn-left",
+      "family": "maps",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "maps-turn-right",
+      "family": "maps",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "mask-square",
+      "family": "mask",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "mastercard-card",
+      "family": "mastercard",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "mastodon",
+      "family": "mastodon",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "math-book",
+      "family": "math",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "maximize",
+      "family": "maximize",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "medal",
+      "family": "medal",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "medal-1st",
+      "family": "medal",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "media-image",
+      "family": "media",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "media-image-folder",
+      "family": "media",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "media-image-list",
+      "family": "media",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "media-image-plus",
+      "family": "media",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "media-image-xmark",
+      "family": "media",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "media-video",
+      "family": "media",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "media-video-folder",
+      "family": "media",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "media-video-list",
+      "family": "media",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "media-video-plus",
+      "family": "media",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "media-video-xmark",
+      "family": "media",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "medium",
+      "family": "medium",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "megaphone",
+      "family": "megaphone",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "menu",
+      "family": "menu",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "menu-scale",
+      "family": "menu",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "message",
+      "family": "message",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "message-alert",
+      "family": "message",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "message-text",
+      "family": "message",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "meter-arrow-down-right",
+      "family": "meter",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "metro",
+      "family": "metro",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "microphone",
+      "family": "microphone",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "microphone-check",
+      "family": "microphone",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "microphone-minus",
+      "family": "microphone",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "microphone-mute",
+      "family": "microphone",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "microphone-plus",
+      "family": "microphone",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "microphone-speaking",
+      "family": "microphone",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "microphone-warning",
+      "family": "microphone",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "microscope",
+      "family": "microscope",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "minus",
+      "family": "minus",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "minus-circle",
+      "family": "minus",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "minus-hexagon",
+      "family": "minus",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "minus-square",
+      "family": "minus",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "minus-square-dashed",
+      "family": "minus",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "mirror",
+      "family": "mirror",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "mobile-dev-mode",
+      "family": "mobile",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "mobile-fingerprint",
+      "family": "mobile",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "mobile-voice",
+      "family": "mobile",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "modern-tv",
+      "family": "modern",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "modern-tv-4k",
+      "family": "modern",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "money-square",
+      "family": "money",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "moon-sat",
+      "family": "moon",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "more-horiz",
+      "family": "more",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "more-horiz-circle",
+      "family": "more",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "more-vert",
+      "family": "more",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "more-vert-circle",
+      "family": "more",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "motorcycle",
+      "family": "motorcycle",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "mouse-button-left",
+      "family": "mouse",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "mouse-button-right",
+      "family": "mouse",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "mouse-scroll-wheel",
+      "family": "mouse",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "movie",
+      "family": "movie",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "mpeg-format",
+      "family": "mpeg",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "multi-bubble",
+      "family": "multi",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "multi-mac-os-window",
+      "family": "multi",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "multi-window",
+      "family": "multi",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "multiple-pages",
+      "family": "multiple",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "multiple-pages-empty",
+      "family": "multiple",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "multiple-pages-minus",
+      "family": "multiple",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "multiple-pages-plus",
+      "family": "multiple",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "multiple-pages-xmark",
+      "family": "multiple",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "music-double-note",
+      "family": "music",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "music-double-note-plus",
+      "family": "music",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "music-note",
+      "family": "music",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "music-note-plus",
+      "family": "music",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "n-square",
+      "family": "n",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "nav-arrow-down",
+      "family": "nav",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "nav-arrow-left",
+      "family": "nav",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "nav-arrow-right",
+      "family": "nav",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "nav-arrow-up",
+      "family": "nav",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "navigator",
+      "family": "navigator",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "navigator-alt",
+      "family": "navigator",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "neighbourhood",
+      "family": "neighbourhood",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "network",
+      "family": "network",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "network-left",
+      "family": "network",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "network-reverse",
+      "family": "network",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "network-right",
+      "family": "network",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "new-tab",
+      "family": "new",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "nintendo-switch",
+      "family": "nintendo",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "no-smoking-circle",
+      "family": "no",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "non-binary",
+      "family": "non",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "notes",
+      "family": "notes",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "npm",
+      "family": "npm",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "npm-square",
+      "family": "npm",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "number-0-square",
+      "family": "number",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "number-1-square",
+      "family": "number",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "number-2-square",
+      "family": "number",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "number-3-square",
+      "family": "number",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "number-4-square",
+      "family": "number",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "number-5-square",
+      "family": "number",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "number-6-square",
+      "family": "number",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "number-7-square",
+      "family": "number",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "number-8-square",
+      "family": "number",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "number-9-square",
+      "family": "number",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "numbered-list-left",
+      "family": "numbered",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "numbered-list-right",
+      "family": "numbered",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "o-square",
+      "family": "o",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "octagon",
+      "family": "octagon",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "off-tag",
+      "family": "off",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "oil-industry",
+      "family": "oil",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "okrs",
+      "family": "okrs",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "on-tag",
+      "family": "on",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "one-finger-select-hand-gesture",
+      "family": "one",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "one-point-circle",
+      "family": "one",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "open-book",
+      "family": "open",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "open-in-browser",
+      "family": "open",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "open-in-window",
+      "family": "open",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "open-new-window",
+      "family": "open",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "open-select-hand-gesture",
+      "family": "open",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "open-vpn",
+      "family": "open",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "orange-half",
+      "family": "orange",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "orange-slice",
+      "family": "orange",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "orange-slice-alt",
+      "family": "orange",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "organic-food",
+      "family": "organic",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "organic-food-square",
+      "family": "organic",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "orthogonal-view",
+      "family": "orthogonal",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "package",
+      "family": "package",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "package-lock",
+      "family": "package",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "packages",
+      "family": "packages",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "pacman",
+      "family": "pacman",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "page",
+      "family": "page",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "page-down",
+      "family": "page",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "page-edit",
+      "family": "page",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "page-flip",
+      "family": "page",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "page-left",
+      "family": "page",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "page-minus",
+      "family": "page",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "page-minus-in",
+      "family": "page",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "page-plus",
+      "family": "page",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "page-plus-in",
+      "family": "page",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "page-right",
+      "family": "page",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "page-search",
+      "family": "page",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "page-star",
+      "family": "page",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "page-up",
+      "family": "page",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "palette",
+      "family": "palette",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "panorama-enlarge",
+      "family": "panorama",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "panorama-reduce",
+      "family": "panorama",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "pants",
+      "family": "pants",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "pants-pockets",
+      "family": "pants",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "parking",
+      "family": "parking",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "password-check",
+      "family": "password",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "password-cursor",
+      "family": "password",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "password-xmark",
+      "family": "password",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "paste-clipboard",
+      "family": "paste",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "path-arrow",
+      "family": "path",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "pause",
+      "family": "pause",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "pause-window",
+      "family": "pause",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "paypal",
+      "family": "paypal",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "pc-check",
+      "family": "pc",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "pc-firewall",
+      "family": "pc",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "pc-mouse",
+      "family": "pc",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "pc-no-entry",
+      "family": "pc",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "pc-warning",
+      "family": "pc",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "peace-hand",
+      "family": "peace",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "peerlist",
+      "family": "peerlist",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "pen-connect-bluetooth",
+      "family": "pen",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "pen-connect-wifi",
+      "family": "pen",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "pen-tablet",
+      "family": "pen",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "pen-tablet-connect-usb",
+      "family": "pen",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "pen-tablet-connect-wifi",
+      "family": "pen",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "pentagon",
+      "family": "pentagon",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "people-tag",
+      "family": "people",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "percent-rotate-out",
+      "family": "percent",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "percentage",
+      "family": "percentage",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "percentage-circle",
+      "family": "percentage",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "percentage-square",
+      "family": "percentage",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "perspective-view",
+      "family": "perspective",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "pharmacy-cross-circle",
+      "family": "pharmacy",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "pharmacy-cross-tag",
+      "family": "pharmacy",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "phone",
+      "family": "phone",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "phone-disabled",
+      "family": "phone",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "phone-income",
+      "family": "phone",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "phone-minus",
+      "family": "phone",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "phone-outcome",
+      "family": "phone",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "phone-paused",
+      "family": "phone",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "phone-plus",
+      "family": "phone",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "phone-xmark",
+      "family": "phone",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "piggy-bank",
+      "family": "piggy",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "pillow",
+      "family": "pillow",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "pin",
+      "family": "pin",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "pin-slash",
+      "family": "pin",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "pine-tree",
+      "family": "pine",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "pinterest",
+      "family": "pinterest",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "pipe-3d",
+      "family": "pipe",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "pizza-slice",
+      "family": "pizza",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "planet",
+      "family": "planet",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "planet-alt",
+      "family": "planet",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "planet-sat",
+      "family": "planet",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "planimetry",
+      "family": "planimetry",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "play",
+      "family": "play",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "playlist",
+      "family": "playlist",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "playlist-play",
+      "family": "playlist",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "playlist-plus",
+      "family": "playlist",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "playstation-gamepad",
+      "family": "playstation",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "plug-type-a",
+      "family": "plug",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "plug-type-c",
+      "family": "plug",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "plug-type-g",
+      "family": "plug",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "plug-type-l",
+      "family": "plug",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "plus",
+      "family": "plus",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "plus-circle",
+      "family": "plus",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "plus-square",
+      "family": "plus",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "plus-square-dashed",
+      "family": "plus",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "png-format",
+      "family": "png",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "pocket",
+      "family": "pocket",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "podcast",
+      "family": "podcast",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "pokeball",
+      "family": "pokeball",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "polar-sh",
+      "family": "polar",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "position",
+      "family": "position",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "position-align",
+      "family": "position",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "post",
+      "family": "post",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "potion",
+      "family": "potion",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "pound",
+      "family": "pound",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "precision-tool",
+      "family": "precision",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "presentation",
+      "family": "presentation",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "printer",
+      "family": "printer",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "printing-page",
+      "family": "printing",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "priority-down",
+      "family": "priority",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "priority-high",
+      "family": "priority",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "priority-medium",
+      "family": "priority",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "priority-up",
+      "family": "priority",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "privacy-policy",
+      "family": "privacy",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "private-wifi",
+      "family": "private",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "profile-circle",
+      "family": "profile",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "prohibition",
+      "family": "prohibition",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "project-curve-3d",
+      "family": "project",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "puzzle",
+      "family": "puzzle",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "qr-code",
+      "family": "qr",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "question-mark",
+      "family": "question",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "quote",
+      "family": "quote",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "quote-message",
+      "family": "quote",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "radiation",
+      "family": "radiation",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "radius",
+      "family": "radius",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "rain",
+      "family": "rain",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "raw-format",
+      "family": "raw",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "receive-dollars",
+      "family": "receive",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "receive-euros",
+      "family": "receive",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "receive-pounds",
+      "family": "receive",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "receive-yens",
+      "family": "receive",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "redo",
+      "family": "redo",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "redo-action",
+      "family": "redo",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "redo-circle",
+      "family": "redo",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "reduce",
+      "family": "reduce",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "refresh",
+      "family": "refresh",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "refresh-circle",
+      "family": "refresh",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "refresh-double",
+      "family": "refresh",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "reload-window",
+      "family": "reload",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "reminder-hand-gesture",
+      "family": "reminder",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "repeat",
+      "family": "repeat",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "repeat-once",
+      "family": "repeat",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "reply",
+      "family": "reply",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "reply-to-message",
+      "family": "reply",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "report-columns",
+      "family": "report",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "reports",
+      "family": "reports",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "repository",
+      "family": "repository",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "restart",
+      "family": "restart",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "rewind",
+      "family": "rewind",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "rhombus",
+      "family": "rhombus",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "rhombus-arrow-right",
+      "family": "rhombus",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "rings",
+      "family": "rings",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "rocket",
+      "family": "rocket",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "rook",
+      "family": "rook",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "rotate-camera-left",
+      "family": "rotate",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "rotate-camera-right",
+      "family": "rotate",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "round-flask",
+      "family": "round",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "rounded-mirror",
+      "family": "rounded",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "rss-feed",
+      "family": "rss",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "rss-feed-tag",
+      "family": "rss",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "rubik-cube",
+      "family": "rubik",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "ruler",
+      "family": "ruler",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "ruler-arrows",
+      "family": "ruler",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "ruler-combine",
+      "family": "ruler",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "ruler-minus",
+      "family": "ruler",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "ruler-plus",
+      "family": "ruler",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "running",
+      "family": "running",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "safari",
+      "family": "safari",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "safe",
+      "family": "safe",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "safe-arrow-left",
+      "family": "safe",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "safe-arrow-right",
+      "family": "safe",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "safe-open",
+      "family": "safe",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "sandals",
+      "family": "sandals",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "scale-frame-enlarge",
+      "family": "scale",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "scale-frame-reduce",
+      "family": "scale",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "scan-barcode",
+      "family": "scan",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "scan-qr-code",
+      "family": "scan",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "scanning",
+      "family": "scanning",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "scarf",
+      "family": "scarf",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "scissor",
+      "family": "scissor",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "scissor-alt",
+      "family": "scissor",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "screenshot",
+      "family": "screenshot",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "sea-and-sun",
+      "family": "sea",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "sea-waves",
+      "family": "sea",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "search",
+      "family": "search",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "search-engine",
+      "family": "search",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "search-window",
+      "family": "search",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "secure-window",
+      "family": "secure",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "security-pass",
+      "family": "security",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "select-edge-3d",
+      "family": "select",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "select-face-3d",
+      "family": "select",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "select-point-3d",
+      "family": "select",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "select-window",
+      "family": "select",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "selective-tool",
+      "family": "selective",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "send",
+      "family": "send",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "send-diagonal",
+      "family": "send",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "send-dollars",
+      "family": "send",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "send-euros",
+      "family": "send",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "send-mail",
+      "family": "send",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "send-pounds",
+      "family": "send",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "send-yens",
+      "family": "send",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "server",
+      "family": "server",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "server-connection",
+      "family": "server",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "settings",
+      "family": "settings",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "settings-profiles",
+      "family": "settings",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "share-android",
+      "family": "share",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "share-ios",
+      "family": "share",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "shield",
+      "family": "shield",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "shield-alert",
+      "family": "shield",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "shield-alt",
+      "family": "shield",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "shield-broken",
+      "family": "shield",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "shield-check",
+      "family": "shield",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "shield-download",
+      "family": "shield",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "shield-eye",
+      "family": "shield",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "shield-loading",
+      "family": "shield",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "shield-minus",
+      "family": "shield",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "shield-plus-in",
+      "family": "shield",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "shield-question",
+      "family": "shield",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "shield-search",
+      "family": "shield",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "shield-upload",
+      "family": "shield",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "shield-xmark",
+      "family": "shield",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "shirt",
+      "family": "shirt",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "shirt-tank-top",
+      "family": "shirt",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "shop",
+      "family": "shop",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "shop-four-tiles",
+      "family": "shop",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "shop-four-tiles-window",
+      "family": "shop",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "shop-window",
+      "family": "shop",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "shopping-bag",
+      "family": "shopping",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "shopping-bag-arrow-down",
+      "family": "shopping",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "shopping-bag-arrow-up",
+      "family": "shopping",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "shopping-bag-check",
+      "family": "shopping",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "shopping-bag-minus",
+      "family": "shopping",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "shopping-bag-plus",
+      "family": "shopping",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "shopping-bag-pocket",
+      "family": "shopping",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "shopping-bag-warning",
+      "family": "shopping",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "shopping-code",
+      "family": "shopping",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "shopping-code-check",
+      "family": "shopping",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "shopping-code-xmark",
+      "family": "shopping",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "short-pants",
+      "family": "short",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "short-pants-pockets",
+      "family": "short",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "shortcut-square",
+      "family": "shortcut",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "shuffle",
+      "family": "shuffle",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "sidebar-collapse",
+      "family": "sidebar",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "sidebar-expand",
+      "family": "sidebar",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "sigma-function",
+      "family": "sigma",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "simple-cart",
+      "family": "simple",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "sine-wave",
+      "family": "sine",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "single-tap-gesture",
+      "family": "single",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "skateboard",
+      "family": "skateboard",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "skateboarding",
+      "family": "skateboarding",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "skip-next",
+      "family": "skip",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "skip-prev",
+      "family": "skip",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "slash",
+      "family": "slash",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "slash-square",
+      "family": "slash",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "sleeper-chair",
+      "family": "sleeper",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "slips",
+      "family": "slips",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "small-lamp",
+      "family": "small",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "small-lamp-alt",
+      "family": "small",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "smartphone-device",
+      "family": "smartphone",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "smoking",
+      "family": "smoking",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "snapchat",
+      "family": "snapchat",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "snow",
+      "family": "snow",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "snow-flake",
+      "family": "snow",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "soap",
+      "family": "soap",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "soccer-ball",
+      "family": "soccer",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "sofa",
+      "family": "sofa",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "soil",
+      "family": "soil",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "soil-alt",
+      "family": "soil",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "sort",
+      "family": "sort",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "sort-down",
+      "family": "sort",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "sort-up",
+      "family": "sort",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "sound-high",
+      "family": "sound",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "sound-low",
+      "family": "sound",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "sound-min",
+      "family": "sound",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "sound-off",
+      "family": "sound",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "spades",
+      "family": "spades",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "spark",
+      "family": "spark",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "sparks",
+      "family": "sparks",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "sphere",
+      "family": "sphere",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "spiral",
+      "family": "spiral",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "split-area",
+      "family": "split",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "split-square-dashed",
+      "family": "split",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "spock-hand-gesture",
+      "family": "spock",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "spotify",
+      "family": "spotify",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "square",
+      "family": "square",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "square-3d-corner-to-corner",
+      "family": "square",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "square-3d-from-center",
+      "family": "square",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "square-3d-three-points",
+      "family": "square",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "square-cursor",
+      "family": "square",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "square-dashed",
+      "family": "square",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "square-wave",
+      "family": "square",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "stackoverflow",
+      "family": "stackoverflow",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "star",
+      "family": "star",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "star-dashed",
+      "family": "star",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "star-half-dashed",
+      "family": "star",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "stat-down",
+      "family": "stat",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "stat-up",
+      "family": "stat",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "stats-down-square",
+      "family": "stats",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "stats-report",
+      "family": "stats",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "stats-up-square",
+      "family": "stats",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "strategy",
+      "family": "strategy",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "stretching",
+      "family": "stretching",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "strikethrough",
+      "family": "strikethrough",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "stroller",
+      "family": "stroller",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "style-border",
+      "family": "style",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "submit-document",
+      "family": "submit",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "substract",
+      "family": "substract",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "suggestion",
+      "family": "suggestion",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "suitcase",
+      "family": "suitcase",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "sun-light",
+      "family": "sun",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "svg-format",
+      "family": "svg",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "sweep-3d",
+      "family": "sweep",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "swimming",
+      "family": "swimming",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "swipe-down-gesture",
+      "family": "swipe",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "swipe-left-gesture",
+      "family": "swipe",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "swipe-right-gesture",
+      "family": "swipe",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "swipe-two-fingers-down-gesture",
+      "family": "swipe",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "swipe-two-fingers-left-gesture",
+      "family": "swipe",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "swipe-two-fingers-right-gesture",
+      "family": "swipe",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "swipe-two-fingers-up-gesture",
+      "family": "swipe",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "swipe-up-gesture",
+      "family": "swipe",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "switch-off",
+      "family": "switch",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "switch-on",
+      "family": "switch",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "system-restart",
+      "family": "system",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "system-shut",
+      "family": "system",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "table",
+      "family": "table",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "table-2-columns",
+      "family": "table",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "table-rows",
+      "family": "table",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "task-list",
+      "family": "task",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "telegram",
+      "family": "telegram",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "telegram-circle",
+      "family": "telegram",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "temperature-down",
+      "family": "temperature",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "temperature-high",
+      "family": "temperature",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "temperature-low",
+      "family": "temperature",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "temperature-up",
+      "family": "temperature",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "tennis-ball",
+      "family": "tennis",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "tennis-ball-alt",
+      "family": "tennis",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "terminal",
+      "family": "terminal",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "terminal-tag",
+      "family": "terminal",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "test-tube",
+      "family": "test",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "text",
+      "family": "text",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "text-arrows-up-down",
+      "family": "text",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "text-box",
+      "family": "text",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "text-magnifying-glass",
+      "family": "text",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "text-size",
+      "family": "text",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "text-square",
+      "family": "text",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "threads",
+      "family": "threads",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "three-points-circle",
+      "family": "three",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "three-stars",
+      "family": "three",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "thumbs-down",
+      "family": "thumbs",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "thumbs-up",
+      "family": "thumbs",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "thunderstorm",
+      "family": "thunderstorm",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "tif-format",
+      "family": "tif",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "tiff-format",
+      "family": "tiff",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "tiktok",
+      "family": "tiktok",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "time-zone",
+      "family": "time",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "timer",
+      "family": "timer",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "timer-off",
+      "family": "timer",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "tools",
+      "family": "tools",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "tournament",
+      "family": "tournament",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "tower",
+      "family": "tower",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "tower-check",
+      "family": "tower",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "tower-no-access",
+      "family": "tower",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "tower-warning",
+      "family": "tower",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "trademark",
+      "family": "trademark",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "train",
+      "family": "train",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "tram",
+      "family": "tram",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "transition-down",
+      "family": "transition",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "transition-left",
+      "family": "transition",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "transition-right",
+      "family": "transition",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "transition-up",
+      "family": "transition",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "translate",
+      "family": "translate",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "trash",
+      "family": "trash",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "treadmill",
+      "family": "treadmill",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "tree",
+      "family": "tree",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "trekking",
+      "family": "trekking",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "trello",
+      "family": "trello",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "triangle",
+      "family": "triangle",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "triangle-flag",
+      "family": "triangle",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "triangle-flag-circle",
+      "family": "triangle",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "triangle-flag-two-stripes",
+      "family": "triangle",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "trophy",
+      "family": "trophy",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "truck",
+      "family": "truck",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "truck-green",
+      "family": "truck",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "truck-length",
+      "family": "truck",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "tunnel",
+      "family": "tunnel",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "tv",
+      "family": "tv",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "tv-fix",
+      "family": "tv",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "tv-warning",
+      "family": "tv",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "twitter",
+      "family": "twitter",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "two-points-circle",
+      "family": "two",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "two-seater-sofa",
+      "family": "two",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "type",
+      "family": "type",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "u-turn-arrow-left",
+      "family": "u",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "u-turn-arrow-right",
+      "family": "u",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "umbrella",
+      "family": "umbrella",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "underline",
+      "family": "underline",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "underline-square",
+      "family": "underline",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "undo",
+      "family": "undo",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "undo-action",
+      "family": "undo",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "undo-circle",
+      "family": "undo",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "union",
+      "family": "union",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "union-alt",
+      "family": "union",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "union-horiz-alt",
+      "family": "union",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "unity",
+      "family": "unity",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "unity-5",
+      "family": "unity",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "unjoin-3d",
+      "family": "unjoin",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "upload",
+      "family": "upload",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "upload-data-window",
+      "family": "upload",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "upload-square",
+      "family": "upload",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "usb",
+      "family": "usb",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "user",
+      "family": "user",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "user-badge-check",
+      "family": "user",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "user-bag",
+      "family": "user",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "user-cart",
+      "family": "user",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "user-circle",
+      "family": "user",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "user-crown",
+      "family": "user",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "user-love",
+      "family": "user",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "user-plus",
+      "family": "user",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "user-scan",
+      "family": "user",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "user-square",
+      "family": "user",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "user-star",
+      "family": "user",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "user-xmark",
+      "family": "user",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "vegan",
+      "family": "vegan",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "vegan-circle",
+      "family": "vegan",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "vegan-square",
+      "family": "vegan",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "vehicle-green",
+      "family": "vehicle",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "vertical-merge",
+      "family": "vertical",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "vertical-split",
+      "family": "vertical",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "vials",
+      "family": "vials",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "video-camera",
+      "family": "video",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "video-camera-off",
+      "family": "video",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "video-projector",
+      "family": "video",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "view-360",
+      "family": "view",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "view-columns-2",
+      "family": "view",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "view-columns-3",
+      "family": "view",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "view-grid",
+      "family": "view",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "view-structure-down",
+      "family": "view",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "view-structure-up",
+      "family": "view",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "voice",
+      "family": "voice",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "voice-check",
+      "family": "voice",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "voice-circle",
+      "family": "voice",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "voice-lock-circle",
+      "family": "voice",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "voice-scan",
+      "family": "voice",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "voice-square",
+      "family": "voice",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "voice-xmark",
+      "family": "voice",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "vr-tag",
+      "family": "vr",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "vue-js",
+      "family": "vue",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "waist",
+      "family": "waist",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "walking",
+      "family": "walking",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "wallet",
+      "family": "wallet",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "warning-circle",
+      "family": "warning",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "warning-hexagon",
+      "family": "warning",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "warning-square",
+      "family": "warning",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "warning-triangle",
+      "family": "warning",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "warning-window",
+      "family": "warning",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "wash",
+      "family": "wash",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "washing-machine",
+      "family": "washing",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "watering-soil",
+      "family": "watering",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "web-window",
+      "family": "web",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "web-window-energy-consumption",
+      "family": "web",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "web-window-xmark",
+      "family": "web",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "webp-format",
+      "family": "webp",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "weight",
+      "family": "weight",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "weight-alt",
+      "family": "weight",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "whatsapp",
+      "family": "whatsapp",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "white-flag",
+      "family": "white",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "wifi",
+      "family": "wifi",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "wifi-off",
+      "family": "wifi",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "wifi-signal-none",
+      "family": "wifi",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "wifi-tag",
+      "family": "wifi",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "wifi-warning",
+      "family": "wifi",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "wifi-xmark",
+      "family": "wifi",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "wind",
+      "family": "wind",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "window-check",
+      "family": "window",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "window-lock",
+      "family": "window",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "window-no-access",
+      "family": "window",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "window-tabs",
+      "family": "window",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "window-xmark",
+      "family": "window",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "windows",
+      "family": "windows",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "wolf",
+      "family": "wolf",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "wrap-text",
+      "family": "wrap",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "wrench",
+      "family": "wrench",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "wristwatch",
+      "family": "wristwatch",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "www",
+      "family": "www",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "x",
+      "family": "x",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "x-square",
+      "family": "x",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "xbox-a",
+      "family": "xbox",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "xbox-b",
+      "family": "xbox",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "xbox-x",
+      "family": "xbox",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "xbox-y",
+      "family": "xbox",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "xmark",
+      "family": "xmark",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "xmark-circle",
+      "family": "xmark",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "xmark-square",
+      "family": "xmark",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "xray-view",
+      "family": "xray",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "y-square",
+      "family": "y",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "yelp",
+      "family": "yelp",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "yen",
+      "family": "yen",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "yen-square",
+      "family": "yen",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "yoga",
+      "family": "yoga",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "youtube",
+      "family": "youtube",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "z-square",
+      "family": "z",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "zoom-in",
+      "family": "zoom",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "id": "zoom-out",
+      "family": "zoom",
+      "viewBox": "0 0 24 24"
+    }
+  ]
+}

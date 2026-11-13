@@ -1,0 +1,189 @@
+<!-- @dsCard group="Concepts" height=660 width=760 subtitle="Balanced iOS27/macOS27-style hybrid — layered glass over a soft base, cyan accent, pointer parallax" -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Lucent — Concept B: Atrium</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap">
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; }
+  body {
+    background: var(--surface-base);
+    color: var(--ink);
+    font-family: var(--font-sans);
+    padding: var(--space-6);
+    min-height: 660px;
+    overflow: hidden;
+  }
+  .lc-b-topbar { display: flex; align-items: center; justify-content: space-between; margin-bottom: var(--space-5); position: relative; z-index: 3; }
+  .lc-b-mark { letter-spacing: 0.08em; color: var(--ink-muted); }
+
+  .lc-b-toggle {
+    appearance: none; border: none; cursor: pointer;
+    width: 56px; height: 30px; border-radius: var(--radius-full);
+    background: var(--surface-control); backdrop-filter: blur(var(--blur-sm)); -webkit-backdrop-filter: blur(var(--blur-sm));
+    
+    position: relative; padding: 0; flex: none;
+  }
+  .lc-b-toggle .knob {
+    position: absolute; top: 3px; left: 3px; width: 24px; height: 24px;
+    border-radius: var(--radius-full); background: var(--surface-raised);
+    box-shadow: var(--shadow-raised-md); transition: transform 180ms ease;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .lc-b-toggle.is-dark .knob { transform: translateX(26px); }
+  .lc-b-toggle .knob::after { content: ""; width: 8px; height: 8px; border-radius: var(--radius-full); background: var(--accent-b); }
+  .lc-b-toggle:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 3px; }
+
+  .lc-b-scene { position: relative; height: 540px; }
+
+  .lc-b-glow {
+    position: absolute; inset: -40px; z-index: 0;
+    background: radial-gradient(480px 320px at 30% 20%, var(--accent-b) 0%, transparent 70%);
+    opacity: var(--opacity-glass-subtle);
+    filter: blur(var(--blur-lg));
+    transition: transform 120ms ease-out;
+    pointer-events: none;
+  }
+
+  .lc-b-base {
+    position: relative; z-index: 1; height: 100%;
+    background: var(--surface-raised); box-shadow: var(--shadow-raised-md);
+    border-radius: var(--radius-lg);
+    padding: var(--space-6);
+  }
+
+  .lc-b-panel {
+    position: absolute; z-index: 2;
+    background: var(--glass-surface); backdrop-filter: blur(var(--blur-md)); -webkit-backdrop-filter: blur(var(--blur-md));
+    
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-raised-md);
+    transition: transform 120ms ease-out;
+  }
+  .lc-b-panel.is-near { z-index: 3; background: var(--glass-surface-strong); box-shadow: var(--shadow-raised-lg); }
+
+  .lc-b-panel-list { top: var(--space-6); left: var(--space-6); right: 46%; padding: var(--space-5); }
+  .lc-b-row { display: flex; align-items: center; gap: var(--space-4); padding: var(--space-3) 0; }
+  .lc-b-row + .lc-b-row { border-top: 1px solid var(--glass-border); }
+  .lc-b-chip { width: 36px; height: 36px; border-radius: var(--radius-full); background: var(--surface-raised); box-shadow: var(--shadow-raised-md); flex: none; display: flex; align-items: center; justify-content: center; }
+  .lc-b-chip::after { content: ""; width: 8px; height: 8px; border-radius: var(--radius-full); background: var(--accent-b); }
+  .lc-b-rowtext { flex: 1; min-width: 0; }
+  .lc-b-rowtext .t { margin: 0; }
+  .lc-b-rowtext .d { margin: 2px 0 0; color: var(--ink-muted); }
+  .lc-b-mini {
+    appearance: none; border: none; cursor: pointer; flex: none;
+    width: 44px; height: 26px; border-radius: var(--radius-full); position: relative;
+    background: var(--surface-sunken); box-shadow: var(--shadow-inset);
+  }
+  .lc-b-mini.on { background: var(--accent-b); box-shadow: none; }
+  .lc-b-mini .d { position: absolute; top: 3px; left: 3px; width: 20px; height: 20px; border-radius: var(--radius-full); background: var(--surface-raised); box-shadow: var(--shadow-raised-md); transition: transform 150ms ease; }
+  .lc-b-mini.on .d { transform: translateX(18px); }
+  .lc-b-mini:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+
+  .lc-b-panel-readout {
+    top: calc(var(--space-6) + 40px); right: var(--space-6); left: 58%; bottom: var(--space-6);
+    padding: var(--space-6); display: flex; flex-direction: column; justify-content: space-between;
+  }
+  .lc-b-readout-value { margin: 0; }
+  .lc-b-readout-label { margin: var(--space-2) 0 0; color: var(--ink-muted); }
+  .lc-b-cta {
+    appearance: none; cursor: pointer; align-self: flex-start;
+    padding: var(--space-3) var(--space-5); border-radius: var(--radius-md);
+    background: transparent; color: var(--accent-b); border: 1px solid var(--accent-b);
+  }
+  .lc-b-cta:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+
+  .lc-b-hint { position: absolute; left: var(--space-6); bottom: var(--space-4); color: var(--ink-muted); z-index: 1; }
+
+/* restyle: 44px touch target via hit area; visible track unchanged */
+.lc-b-toggle::before { content: ""; position: absolute; left: 0; right: 0; top: -7px; bottom: -7px; }
+
+/* restyle: 44px touch target via hit area; visible track unchanged */
+.lc-b-mini::before { content: ""; position: absolute; left: 0; right: 0; top: -9px; bottom: -9px; }
+</style>
+</head>
+<body>
+  <div class="lc-b-topbar">
+    <span class="label-mono lc-b-mark">LUCENT · ATRIUM</span>
+    <button class="lc-b-toggle" id="lc-b-theme-toggle" type="button" aria-pressed="false" aria-label="Toggle light and dark theme">
+      <span class="knob"></span>
+    </button>
+  </div>
+
+  <div class="lc-b-scene" id="lc-b-scene">
+    <div class="lc-b-glow" data-depth="4"></div>
+    <div class="lc-b-base">
+      <h2 class="heading-md" style="margin:0 0 4px;">Ambient</h2>
+      <p class="body-sm" style="margin:0; color: var(--ink-muted); max-width:280px;">Layered glass over a soft neumorphic base. Move your cursor over this card to feel the depth.</p>
+      <p class="lc-b-hint body-sm">↕ pointer parallax — each pane shifts by its own depth</p>
+    </div>
+
+    <div class="lc-b-panel lc-b-panel-list" data-depth="14">
+      <div class="lc-b-row">
+        <span class="lc-b-chip" aria-hidden="true"></span>
+        <div class="lc-b-rowtext">
+          <p class="heading-sm t">Do Not Disturb</p>
+          <p class="body-sm d">Silences alerts until 8:00</p>
+        </div>
+        <button class="lc-b-mini on" type="button" aria-label="Do Not Disturb, on"><span class="d"></span></button>
+      </div>
+      <div class="lc-b-row">
+        <span class="lc-b-chip" aria-hidden="true"></span>
+        <div class="lc-b-rowtext">
+          <p class="heading-sm t">Adaptive Brightness</p>
+          <p class="body-sm d">Matches ambient light</p>
+        </div>
+        <button class="lc-b-mini" type="button" aria-label="Adaptive Brightness, off"><span class="d"></span></button>
+      </div>
+    </div>
+
+    <div class="lc-b-panel lc-b-panel-readout is-near" data-depth="24">
+      <div>
+        <p class="display-lg data-mono lc-b-readout-value">72°</p>
+        <p class="body-sm lc-b-readout-label">Ambient temperature</p>
+      </div>
+      <button class="lc-b-cta heading-sm" type="button" style="font-weight:600;">Adjust</button>
+    </div>
+  </div>
+
+<script>
+(function () {
+  var toggle = document.getElementById('lc-b-theme-toggle');
+  var root = document.documentElement;
+  function syncTheme() {
+    var isDark = root.getAttribute('data-theme') === 'dark';
+    toggle.classList.toggle('is-dark', isDark);
+    toggle.setAttribute('aria-pressed', isDark ? 'true' : 'false');
+  }
+  toggle.addEventListener('click', function () {
+    var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    syncTheme();
+  });
+  syncTheme();
+
+  Array.prototype.forEach.call(document.querySelectorAll('.lc-b-mini'), function (btn) {
+    btn.addEventListener('click', function () { btn.classList.toggle('on'); });
+  });
+
+  var scene = document.getElementById('lc-b-scene');
+  var layers = document.querySelectorAll('[data-depth]');
+  scene.addEventListener('mousemove', function (e) {
+    var rect = scene.getBoundingClientRect();
+    var nx = (e.clientX - rect.left) / rect.width - 0.5;
+    var ny = (e.clientY - rect.top) / rect.height - 0.5;
+    layers.forEach(function (el) {
+      var depth = parseFloat(el.getAttribute('data-depth'));
+      el.style.transform = 'translate(' + (nx * depth) + 'px,' + (ny * depth) + 'px)';
+    });
+  });
+  scene.addEventListener('mouseleave', function () {
+    layers.forEach(function (el) { el.style.transform = 'translate(0,0)'; });
+  });
+})();
+</script>
+</body>
+</html>

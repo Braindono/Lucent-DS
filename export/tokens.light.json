@@ -1,0 +1,1082 @@
+{
+  "color": {
+    "neutral": {
+      "000": {
+        "$type": "color",
+        "$value": "#fafbfd",
+        "$description": "Absolute white point. Used only as a component of rgba() glass/highlight values, never as a surface on its own.",
+        "$extensions": {
+          "lucent.sourceName": "ink-000"
+        }
+      },
+      "050": {
+        "$type": "color",
+        "$value": "#f3f5f8",
+        "$description": "Light-theme page and neumorphic base surface. Also the light-theme text color on dark fills.",
+        "$extensions": {
+          "lucent.sourceName": "ink-050"
+        }
+      },
+      "100": {
+        "$type": "color",
+        "$value": "#e4e7ed",
+        "$description": "Light-theme hairline dividers and the cover's relief tint block.",
+        "$extensions": {
+          "lucent.sourceName": "ink-100"
+        }
+      },
+      "300": {
+        "$type": "color",
+        "$value": "#a7afc0",
+        "$description": "Placeholder and disabled-state content only; not for body text (below 4.5:1).",
+        "$extensions": {
+          "lucent.sourceName": "ink-300"
+        }
+      },
+      "400": {
+        "$type": "color",
+        "$value": "#7c879c",
+        "$description": "Faint icons and inactive control marks.",
+        "$extensions": {
+          "lucent.sourceName": "ink-400"
+        }
+      },
+      "600": {
+        "$type": "color",
+        "$value": "#46536b",
+        "$description": "Muted secondary text on ink-050 / ink-000 (7:1+).",
+        "$extensions": {
+          "lucent.sourceName": "ink-600"
+        }
+      },
+      "700": {
+        "$type": "color",
+        "$value": "#29323f",
+        "$description": "Structural lines and icon strokes in Concept A's instrument grid.",
+        "$extensions": {
+          "lucent.sourceName": "ink-700"
+        }
+      },
+      "900": {
+        "$type": "color",
+        "$value": "#10151c",
+        "$description": "Primary text on light surfaces (light theme).",
+        "$extensions": {
+          "lucent.sourceName": "ink-900"
+        }
+      },
+      "950": {
+        "$type": "color",
+        "$value": "#0b0f14",
+        "$description": "Dark-theme page and neumorphic base surface. Also the text color on light/bright fills.",
+        "$extensions": {
+          "lucent.sourceName": "ink-950"
+        }
+      },
+      "muted": {
+        "$type": "color",
+        "$value": "{color.neutral.600}",
+        "$description": "Secondary text and captions on surface-base / glass-surface (7:1+ in both themes).",
+        "$extensions": {
+          "lucent.sourceName": "ink-muted"
+        }
+      },
+      "faint": {
+        "$type": "color",
+        "$value": "{color.neutral.300}",
+        "$description": "Placeholder text and disabled labels only.",
+        "$extensions": {
+          "lucent.sourceName": "ink-faint"
+        }
+      }
+    },
+    "indigo": {
+      "300": {
+        "$type": "color",
+        "$value": "#8b9eff",
+        "$description": "Concept A (Instrument) accent fill in dark theme; pairs with ink-950 text (7.8:1).",
+        "$extensions": {
+          "lucent.sourceName": "indigo-300"
+        }
+      },
+      "500": {
+        "$type": "color",
+        "$value": "#4E5EE0",
+        "$description": "Concept A (Instrument) primary accent fill in light theme; pairs with ink-000 text (5.1:1). Also Lucent's locked primary accent.",
+        "$extensions": {
+          "lucent.sourceName": "indigo-500"
+        }
+      },
+      "700": {
+        "$type": "color",
+        "$value": "#2f3fb0",
+        "$description": "Concept A accent text/icon color directly on ink-050 (5:1+); also the light-theme focus alternative for indigo contexts.",
+        "$extensions": {
+          "lucent.sourceName": "indigo-700"
+        }
+      },
+      "900": {
+        "$type": "color",
+        "$value": "#1b2570",
+        "$description": "Concept A deep shadow tint for pressed states and glass tints over indigo panels.",
+        "$extensions": {
+          "lucent.sourceName": "indigo-900"
+        }
+      }
+    },
+    "cyan": {
+      "300": {
+        "$type": "color",
+        "$value": "#7fe3e8",
+        "$description": "Concept B (Atrium) accent fill in dark theme, pairs with ink-950 text (12.9:1); dark-theme focus ring.",
+        "$extensions": {
+          "lucent.sourceName": "cyan-300"
+        }
+      },
+      "500": {
+        "$type": "color",
+        "$value": "#22b8c2",
+        "$description": "Concept B (Atrium) primary accent fill in light theme; pairs with ink-950 text, not white (8:1).",
+        "$extensions": {
+          "lucent.sourceName": "cyan-500"
+        }
+      },
+      "700": {
+        "$type": "color",
+        "$value": "#157a82",
+        "$description": "Light-theme focus ring on ink-050 / ink-000 (4.6:1); Concept B deep accent text on light glass.",
+        "$extensions": {
+          "lucent.sourceName": "cyan-700"
+        }
+      },
+      "900": {
+        "$type": "color",
+        "$value": "#0b454a",
+        "$description": "Concept B deep shadow tint for pressed states and glass tints over cyan panels.",
+        "$extensions": {
+          "lucent.sourceName": "cyan-900"
+        }
+      },
+      "600": {
+        "$type": "color",
+        "$value": "#0ea5b8",
+        "$description": "Dark-surface chart-mark variant of cyan-500 — cyan-500 itself runs too light/low-chroma on the dark chart surface to pass the categorical lightness band; this step does. Not used outside data visualization.",
+        "$extensions": {
+          "lucent.sourceName": "cyan-600"
+        }
+      }
+    },
+    "violet": {
+      "300": {
+        "$type": "color",
+        "$value": "#c6a8ff",
+        "$description": "Concept C (Aurora Console) accent fill in dark theme, pairs with ink-950 text (9.6:1).",
+        "$extensions": {
+          "lucent.sourceName": "violet-300"
+        }
+      },
+      "500": {
+        "$type": "color",
+        "$value": "#8a5cf6",
+        "$description": "Concept C decorative glow, large icons and borders only (3.8:1) — not for small text or fills carrying body copy.",
+        "$extensions": {
+          "lucent.sourceName": "violet-500"
+        }
+      },
+      "700": {
+        "$type": "color",
+        "$value": "#5b34b8",
+        "$description": "Concept C primary accent fill for buttons and labels in light theme; pairs with ink-000 text (8:1).",
+        "$extensions": {
+          "lucent.sourceName": "violet-700"
+        }
+      },
+      "900": {
+        "$type": "color",
+        "$value": "#331c6e",
+        "$description": "Concept C deep shadow tint and glass tints over violet panels.",
+        "$extensions": {
+          "lucent.sourceName": "violet-900"
+        }
+      }
+    },
+    "surface": {
+      "base": {
+        "$type": "color",
+        "$value": "#f3f5f8",
+        "$description": "Page background. Neumorphic raised, control, field and sunken surfaces step at most 4% lightness from this value; elevation reads through shadow tokens plus that small fill step, never a large fill change.",
+        "$extensions": {
+          "lucent.sourceName": "surface-base"
+        }
+      },
+      "raised": {
+        "$type": "color",
+        "$value": "#f7f9fb",
+        "$description": "Neumorphic raised panels, cards and buttons. Small fill step (<=4% lightness) above surface-base. Pair with shadow-raised-md (or shadow.neu-raised for legacy).",
+        "$extensions": {
+          "lucent.sourceName": "surface-raised"
+        }
+      },
+      "sunken": {
+        "$type": "color",
+        "$value": "#eaedf2",
+        "$description": "Neumorphic wells: track grooves and pressed states. Small fill step below surface-base. Pair with shadow-inset (or shadow.neu-inset for legacy).",
+        "$extensions": {
+          "lucent.sourceName": "surface-sunken"
+        }
+      },
+      "control": {
+        "$type": "color",
+        "$value": "#eef1f5",
+        "$description": "Rest fill for neumorphic controls (buttons, toggles, segmented controls). Pair with shadow-raised-md at rest, shadow-raised-hover on hover, shadow-inset when pressed.",
+        "$extensions": {
+          "lucent.sourceName": "surface-control"
+        }
+      },
+      "field": {
+        "$type": "color",
+        "$value": "{color.surface.sunken}",
+        "$description": "Recessed field and well fill for inputs and wells. Pair with shadow-inset-soft. Add a 1px boundary border for 3:1 contrast (WCAG 1.4.11).",
+        "$extensions": {
+          "lucent.sourceName": "surface-field"
+        }
+      },
+      "input": {
+        "$type": "color",
+        "$value": "{color.neutral.000}",
+        "$description": "Text input fill. Pair with shadow-inset-soft and a 1px boundary border for 3:1 contrast (WCAG 1.4.11).",
+        "$extensions": {
+          "lucent.sourceName": "surface-input"
+        }
+      }
+    },
+    "glass": {
+      "surface": {
+        "$type": "color",
+        "$value": "rgba(250,251,253,0.55)",
+        "$description": "Frosted glass panel fill. Always paired with backdrop-filter: blur(var(--blur-md)) and glass-border.",
+        "$extensions": {
+          "lucent.sourceName": "glass-surface"
+        }
+      },
+      "surface-strong": {
+        "$type": "color",
+        "$value": "rgba(250,251,253,0.78)",
+        "$description": "Glass panel fill where legibility must win over transparency (modals, primary readouts).",
+        "$extensions": {
+          "lucent.sourceName": "glass-surface-strong"
+        }
+      },
+      "border": {
+        "$type": "color",
+        "$value": "rgba(255,255,255,0.8)",
+        "$description": "1px hairline on the top and left edge of every glass panel, simulating a refracted edge.",
+        "$extensions": {
+          "lucent.sourceName": "glass-border"
+        }
+      },
+      "highlight": {
+        "$type": "color",
+        "$value": "rgba(255,255,255,0.9)",
+        "$description": "Specular highlight: a 1–2px gradient line along a glass panel's top edge.",
+        "$extensions": {
+          "lucent.sourceName": "glass-highlight"
+        }
+      }
+    },
+    "scrim": {
+      "$type": "color",
+      "$value": "rgba(11,15,20,0.35)",
+      "$description": "Backdrop behind an elevated glass panel (modals, popovers).",
+      "$extensions": {
+        "lucent.sourceName": "scrim"
+      }
+    },
+    "text": {
+      "primary": {
+        "$type": "color",
+        "$value": "{color.neutral.900}",
+        "$description": "Primary body and heading text on surface-base / surface-raised / glass-surface-strong (15:1+ in both themes).",
+        "$extensions": {
+          "lucent.sourceName": "ink"
+        }
+      }
+    },
+    "accent": {
+      "a": {
+        "$type": "color",
+        "$value": "{color.indigo.500}",
+        "$description": "Concept A (Instrument) primary accent fill — the one saturated color in an otherwise restrained palette.",
+        "$extensions": {
+          "lucent.sourceName": "accent-a"
+        }
+      },
+      "a-on": {
+        "$type": "color",
+        "$value": "{color.neutral.000}",
+        "$description": "Text and icon color on accent-a fills.",
+        "$extensions": {
+          "lucent.sourceName": "accent-a-on"
+        }
+      },
+      "b": {
+        "$type": "color",
+        "$value": "{color.cyan.500}",
+        "$description": "Concept B (Atrium) primary accent fill for CTAs and active states.",
+        "$extensions": {
+          "lucent.sourceName": "accent-b"
+        }
+      },
+      "b-on": {
+        "$type": "color",
+        "$value": "{color.neutral.950}",
+        "$description": "Text and icon color on accent-b fills.",
+        "$extensions": {
+          "lucent.sourceName": "accent-b-on"
+        }
+      },
+      "c": {
+        "$type": "color",
+        "$value": "{color.violet.700}",
+        "$description": "Concept C (Aurora Console) primary accent fill for buttons and labels.",
+        "$extensions": {
+          "lucent.sourceName": "accent-c"
+        }
+      },
+      "c-on": {
+        "$type": "color",
+        "$value": "{color.neutral.000}",
+        "$description": "Text and icon color on accent-c fills.",
+        "$extensions": {
+          "lucent.sourceName": "accent-c-on"
+        }
+      },
+      "c-glow": {
+        "$type": "color",
+        "$value": "{color.violet.500}",
+        "$description": "Concept C decorative edge glow and large display numerals only — see violet-500's own note on the 3:1 floor.",
+        "$extensions": {
+          "lucent.sourceName": "accent-c-glow"
+        }
+      },
+      "primary": {
+        "$type": "color",
+        "$value": "{color.indigo.500}",
+        "$description": "Lucent's locked primary accent — indigo, carried from Concept A/Instrument. Used by the Primary Direction component and, as the panel case study's Secondary, by the panel case study.",
+        "$extensions": {
+          "lucent.sourceName": "accent-primary"
+        }
+      },
+      "primary-on": {
+        "$type": "color",
+        "$value": "{color.neutral.000}",
+        "$description": "Text and icon color on accent-primary fills.",
+        "$extensions": {
+          "lucent.sourceName": "accent-primary-on"
+        }
+      },
+      "secondary": {
+        "$type": "color",
+        "$value": "{color.violet.700}",
+        "$description": "Lucent's locked secondary accent — violet, carried from Concept C/Aurora Console. Used by the Primary Direction component and, as the panel case study's Primary, by the panel case study.",
+        "$extensions": {
+          "lucent.sourceName": "accent-secondary"
+        }
+      },
+      "secondary-on": {
+        "$type": "color",
+        "$value": "{color.neutral.000}",
+        "$description": "Text and icon color on accent-secondary fills.",
+        "$extensions": {
+          "lucent.sourceName": "accent-secondary-on"
+        }
+      },
+      "tertiary": {
+        "$type": "color",
+        "$value": "{color.cyan.500}",
+        "$description": "Lucent's locked tertiary accent — the cyan already used inside Concept C's own design for its 'sync' state. Gradients and secondary marks only, same restraint as accent-b. Replaces the earlier invented green as the panel case study's tertiary.",
+        "$extensions": {
+          "lucent.sourceName": "accent-tertiary"
+        }
+      },
+      "tertiary-on": {
+        "$type": "color",
+        "$value": "{color.neutral.950}",
+        "$description": "Text and icon color on accent-tertiary fills.",
+        "$extensions": {
+          "lucent.sourceName": "accent-tertiary-on"
+        }
+      }
+    },
+    "focus-ring": {
+      "$type": "color",
+      "$value": "{color.cyan.700}",
+      "$description": "The only focus indicator color, independent of any concept's accent, so focus never reads as an accent color. 4.6:1+ in both themes.",
+      "$extensions": {
+        "lucent.sourceName": "focus-ring"
+      }
+    },
+    "viz": {
+      "series-a": {
+        "$type": "color",
+        "$value": "{color.indigo.500}",
+        "$description": "Chart series slot A. Validated categorical (with viz-series-b, viz-series-c): CVD ΔE 15.8–19.6, normal-vision ΔE 21.4–25.7, both ≥3:1 on surface-base in both themes.",
+        "$extensions": {
+          "lucent.sourceName": "viz-series-a"
+        }
+      },
+      "series-b": {
+        "$type": "color",
+        "$value": "{color.cyan.500}",
+        "$description": "Chart series slot B. Light theme sits at 2.2:1 on surface-base — ship a legend and/or direct labels with it, never fill alone (validator relief rule).",
+        "$extensions": {
+          "lucent.sourceName": "viz-series-b"
+        }
+      },
+      "series-c": {
+        "$type": "color",
+        "$value": "{color.violet.500}",
+        "$description": "Chart series slot C. Clears the categorical band and ≥3:1 contrast in both themes without adjustment.",
+        "$extensions": {
+          "lucent.sourceName": "viz-series-c"
+        }
+      },
+      "series-d": {
+        "$type": "color",
+        "$value": "#c2306b",
+        "$description": "Chart series slot D (4th categorical, rose; hue distinct from the status ladder). Contrast on surface-base 4.89:1 light / 5.70:1 dark.",
+        "$extensions": {
+          "lucent.sourceName": "viz-series-d"
+        }
+      }
+    },
+    "status": {
+      "good": {
+        "$type": "color",
+        "$value": "#158a5f",
+        "$description": "Reserved status color — healthy/low-severity. Always icon + label, never color alone. 3.98:1 / 9.06:1 on surface-base.",
+        "$extensions": {
+          "lucent.sourceName": "status-good"
+        }
+      },
+      "warning": {
+        "$type": "color",
+        "$value": "#c97a17",
+        "$description": "Reserved status color — needs attention. Always icon + label. 3.06:1 / 9.62:1 on surface-base.",
+        "$extensions": {
+          "lucent.sourceName": "status-warning"
+        }
+      },
+      "serious": {
+        "$type": "color",
+        "$value": "#c4552b",
+        "$description": "Reserved status color — degraded, one step below critical. Always icon + label. 4.11:1 / 7.77:1 on surface-base.",
+        "$extensions": {
+          "lucent.sourceName": "status-serious"
+        }
+      },
+      "critical": {
+        "$type": "color",
+        "$value": "#c7333b",
+        "$description": "Reserved status color — failing/highest severity. Also the color an inherently bad-vs-good series (an error count, a failure rate) wears in a chart, per the collision rule: status meaning beats categorical when a series IS the status. Always icon + label. 4.85:1 / 6.95:1 on surface-base.",
+        "$extensions": {
+          "lucent.sourceName": "status-critical"
+        }
+      },
+      "info": {
+        "$type": "color",
+        "$value": "#00629f",
+        "$description": "Reserved status color — active/in-progress. Distinct from the good/warning/serious/critical severity ladder: this is an activity state, not a severity. Always icon + label. 5.92:1 / 5.26:1 on surface-base. Added for the panel case study.",
+        "$extensions": {
+          "lucent.sourceName": "status-info"
+        }
+      }
+    }
+  },
+  "shadow": {
+    "neu-raised": {
+      "$type": "shadow",
+      "$value": [
+        {
+          "color": "rgba(76, 90, 110, 0.18)",
+          "offsetX": "6px",
+          "offsetY": "6px",
+          "blur": "14px",
+          "spread": "0px",
+          "inset": false
+        },
+        {
+          "color": "rgba(255, 255, 255, 0.85)",
+          "offsetX": "-6px",
+          "offsetY": "-6px",
+          "blur": "14px",
+          "spread": "0px",
+          "inset": false
+        }
+      ],
+      "$description": "Embossed elevation on surface-raised — buttons, dials, switches at rest. Deprecated for new work: use shadow-raised-*/shadow-inset.",
+      "$extensions": {
+        "lucent.sourceName": "neu-raised"
+      }
+    },
+    "neu-inset": {
+      "$type": "shadow",
+      "$value": [
+        {
+          "color": "rgba(76, 90, 110, 0.20)",
+          "offsetX": "4px",
+          "offsetY": "4px",
+          "blur": "10px",
+          "spread": "0px",
+          "inset": true
+        },
+        {
+          "color": "rgba(255, 255, 255, 0.75)",
+          "offsetX": "-4px",
+          "offsetY": "-4px",
+          "blur": "10px",
+          "spread": "0px",
+          "inset": true
+        }
+      ],
+      "$description": "Debossed/pressed elevation on surface-sunken — wells, tracks, active buttons. Deprecated for new work: use shadow-raised-*/shadow-inset.",
+      "$extensions": {
+        "lucent.sourceName": "neu-inset"
+      }
+    },
+    "neu-inset-soft": {
+      "$type": "shadow",
+      "$value": [
+        {
+          "color": "rgba(76, 90, 110, 0.07)",
+          "offsetX": "4px",
+          "offsetY": "4px",
+          "blur": "10px",
+          "spread": "0px",
+          "inset": true
+        },
+        {
+          "color": "rgba(255, 255, 255, 0.75)",
+          "offsetX": "-4px",
+          "offsetY": "-4px",
+          "blur": "10px",
+          "spread": "0px",
+          "inset": true
+        }
+      ],
+      "$description": "Softer debossed elevation for small, nested wells (concentric hub/marble motifs) where neu-inset reads as too high-contrast — most visibly in light theme, where a given shadow alpha is far more prominent against a near-white surface than the same alpha is against near-black. Discovered on the Orbital Pull mark (the LucentDS logo); use here in place of neu-inset for any small-radius debossed shell nested inside a larger raised surface. Deprecated for new work: use shadow-raised-*/shadow-inset.",
+      "$extensions": {
+        "lucent.sourceName": "neu-inset-soft"
+      }
+    },
+    "shadow-raised-sm": {
+      "$type": "shadow",
+      "$value": [
+        {
+          "color": "rgba(76, 90, 110, 0.18)",
+          "offsetX": "2px",
+          "offsetY": "2px",
+          "blur": "6px",
+          "spread": "0px",
+          "inset": false
+        },
+        {
+          "color": "rgba(255, 255, 255, 0.85)",
+          "offsetX": "-2px",
+          "offsetY": "-2px",
+          "blur": "6px",
+          "spread": "0px",
+          "inset": false
+        }
+      ],
+      "$description": "Small embossed elevation for chips and compact controls.",
+      "$extensions": {
+        "lucent.sourceName": "shadow-raised-sm"
+      }
+    },
+    "shadow-raised-md": {
+      "$type": "shadow",
+      "$value": [
+        {
+          "color": "rgba(76, 90, 110, 0.18)",
+          "offsetX": "4px",
+          "offsetY": "4px",
+          "blur": "10px",
+          "spread": "0px",
+          "inset": false
+        },
+        {
+          "color": "rgba(255, 255, 255, 0.85)",
+          "offsetX": "-4px",
+          "offsetY": "-4px",
+          "blur": "10px",
+          "spread": "0px",
+          "inset": false
+        }
+      ],
+      "$description": "Rest elevation for neumorphic controls and cards.",
+      "$extensions": {
+        "lucent.sourceName": "shadow-raised-md"
+      }
+    },
+    "shadow-raised-lg": {
+      "$type": "shadow",
+      "$value": [
+        {
+          "color": "rgba(76, 90, 110, 0.18)",
+          "offsetX": "8px",
+          "offsetY": "8px",
+          "blur": "14px",
+          "spread": "0px",
+          "inset": false
+        },
+        {
+          "color": "rgba(255, 255, 255, 0.85)",
+          "offsetX": "-8px",
+          "offsetY": "-8px",
+          "blur": "14px",
+          "spread": "0px",
+          "inset": false
+        }
+      ],
+      "$description": "Large embossed elevation for hero panels and modals.",
+      "$extensions": {
+        "lucent.sourceName": "shadow-raised-lg"
+      }
+    },
+    "shadow-raised-hover": {
+      "$type": "shadow",
+      "$value": [
+        {
+          "color": "rgba(76, 90, 110, 0.18)",
+          "offsetX": "6px",
+          "offsetY": "6px",
+          "blur": "12px",
+          "spread": "0px",
+          "inset": false
+        },
+        {
+          "color": "rgba(255, 255, 255, 0.85)",
+          "offsetX": "-6px",
+          "offsetY": "-6px",
+          "blur": "12px",
+          "spread": "0px",
+          "inset": false
+        }
+      ],
+      "$description": "Hover elevation for neumorphic controls.",
+      "$extensions": {
+        "lucent.sourceName": "shadow-raised-hover"
+      }
+    },
+    "shadow-inset": {
+      "$type": "shadow",
+      "$value": [
+        {
+          "color": "rgba(76, 90, 110, 0.16)",
+          "offsetX": "3px",
+          "offsetY": "3px",
+          "blur": "6px",
+          "spread": "0px",
+          "inset": true
+        },
+        {
+          "color": "rgba(255, 255, 255, 0.7)",
+          "offsetX": "-3px",
+          "offsetY": "-3px",
+          "blur": "6px",
+          "spread": "0px",
+          "inset": true
+        }
+      ],
+      "$description": "Pressed or active elevation on surface-control and wells.",
+      "$extensions": {
+        "lucent.sourceName": "shadow-inset"
+      }
+    },
+    "shadow-inset-soft": {
+      "$type": "shadow",
+      "$value": [
+        {
+          "color": "rgba(76, 90, 110, 0.07)",
+          "offsetX": "2px",
+          "offsetY": "2px",
+          "blur": "5px",
+          "spread": "0px",
+          "inset": true
+        },
+        {
+          "color": "rgba(255, 255, 255, 0.6)",
+          "offsetX": "-2px",
+          "offsetY": "-2px",
+          "blur": "5px",
+          "spread": "0px",
+          "inset": true
+        }
+      ],
+      "$description": "Recessed field elevation for inputs on surface-field and surface-input.",
+      "$extensions": {
+        "lucent.sourceName": "shadow-inset-soft"
+      }
+    },
+    "elevation-resting": {
+      "$type": "shadow",
+      "$value": [
+        {
+          "color": "rgba(76, 90, 110, 0.18)",
+          "offsetX": "4px",
+          "offsetY": "4px",
+          "blur": "10px",
+          "spread": "0px",
+          "inset": false
+        },
+        {
+          "color": "rgba(255, 255, 255, 0.85)",
+          "offsetX": "-4px",
+          "offsetY": "-4px",
+          "blur": "10px",
+          "spread": "0px",
+          "inset": false
+        }
+      ],
+      "$description": "Alias: rest elevation (same value as shadow-raised-md).",
+      "$extensions": {
+        "lucent.sourceName": "elevation-resting"
+      }
+    },
+    "elevation-lifted": {
+      "$type": "shadow",
+      "$value": [
+        {
+          "color": "rgba(76, 90, 110, 0.18)",
+          "offsetX": "6px",
+          "offsetY": "6px",
+          "blur": "12px",
+          "spread": "0px",
+          "inset": false
+        },
+        {
+          "color": "rgba(255, 255, 255, 0.85)",
+          "offsetX": "-6px",
+          "offsetY": "-6px",
+          "blur": "12px",
+          "spread": "0px",
+          "inset": false
+        }
+      ],
+      "$description": "Alias: lifted elevation (same value as shadow-raised-hover).",
+      "$extensions": {
+        "lucent.sourceName": "elevation-lifted"
+      }
+    },
+    "elevation-pressed": {
+      "$type": "shadow",
+      "$value": [
+        {
+          "color": "rgba(76, 90, 110, 0.16)",
+          "offsetX": "3px",
+          "offsetY": "3px",
+          "blur": "6px",
+          "spread": "0px",
+          "inset": true
+        },
+        {
+          "color": "rgba(255, 255, 255, 0.7)",
+          "offsetX": "-3px",
+          "offsetY": "-3px",
+          "blur": "6px",
+          "spread": "0px",
+          "inset": true
+        }
+      ],
+      "$description": "Alias: pressed elevation (same value as shadow-inset).",
+      "$extensions": {
+        "lucent.sourceName": "elevation-pressed"
+      }
+    },
+    "elevation-field": {
+      "$type": "shadow",
+      "$value": [
+        {
+          "color": "rgba(76, 90, 110, 0.07)",
+          "offsetX": "2px",
+          "offsetY": "2px",
+          "blur": "5px",
+          "spread": "0px",
+          "inset": true
+        },
+        {
+          "color": "rgba(255, 255, 255, 0.6)",
+          "offsetX": "-2px",
+          "offsetY": "-2px",
+          "blur": "5px",
+          "spread": "0px",
+          "inset": true
+        }
+      ],
+      "$description": "Alias: field elevation (same value as shadow-inset-soft).",
+      "$extensions": {
+        "lucent.sourceName": "elevation-field"
+      }
+    },
+    "glass-elevation-1": {
+      "$type": "shadow",
+      "$value": [
+        {
+          "color": "rgba(16, 21, 28, 0.10)",
+          "offsetX": "0px",
+          "offsetY": "4px",
+          "blur": "16px",
+          "spread": "0px",
+          "inset": false
+        }
+      ],
+      "$description": "Resting elevation for a single glass panel.",
+      "$extensions": {
+        "lucent.sourceName": "glass-elevation-1"
+      }
+    },
+    "glass-elevation-2": {
+      "$type": "shadow",
+      "$value": [
+        {
+          "color": "rgba(16, 21, 28, 0.14)",
+          "offsetX": "0px",
+          "offsetY": "12px",
+          "blur": "32px",
+          "spread": "0px",
+          "inset": false
+        }
+      ],
+      "$description": "A glass panel floating over another layer — the mid parallax plane.",
+      "$extensions": {
+        "lucent.sourceName": "glass-elevation-2"
+      }
+    },
+    "glass-elevation-3": {
+      "$type": "shadow",
+      "$value": [
+        {
+          "color": "rgba(16, 21, 28, 0.18)",
+          "offsetX": "0px",
+          "offsetY": "24px",
+          "blur": "64px",
+          "spread": "0px",
+          "inset": false
+        }
+      ],
+      "$description": "The nearest parallax plane — modals, the topmost card in a stack.",
+      "$extensions": {
+        "lucent.sourceName": "glass-elevation-3"
+      }
+    }
+  },
+  "spacing": {
+    "space-1": {
+      "$type": "dimension",
+      "$value": "4px",
+      "$description": "Icon-to-label gaps, tick spacing.",
+      "$extensions": {
+        "lucent.sourceName": "space-1"
+      }
+    },
+    "space-2": {
+      "$type": "dimension",
+      "$value": "8px",
+      "$description": "Tight control padding.",
+      "$extensions": {
+        "lucent.sourceName": "space-2"
+      }
+    },
+    "space-3": {
+      "$type": "dimension",
+      "$value": "12px",
+      "$description": "Default control padding; the cover's grid-pattern pitch.",
+      "$extensions": {
+        "lucent.sourceName": "space-3"
+      }
+    },
+    "space-4": {
+      "$type": "dimension",
+      "$value": "16px",
+      "$description": "Card padding; the base grid unit for layout.",
+      "$extensions": {
+        "lucent.sourceName": "space-4"
+      }
+    },
+    "space-5": {
+      "$type": "dimension",
+      "$value": "24px",
+      "$description": "Gaps between grouped controls.",
+      "$extensions": {
+        "lucent.sourceName": "space-5"
+      }
+    },
+    "space-6": {
+      "$type": "dimension",
+      "$value": "32px",
+      "$description": "Panel padding; gaps between cards.",
+      "$extensions": {
+        "lucent.sourceName": "space-6"
+      }
+    },
+    "space-8": {
+      "$type": "dimension",
+      "$value": "48px",
+      "$description": "Section gaps.",
+      "$extensions": {
+        "lucent.sourceName": "space-8"
+      }
+    },
+    "space-10": {
+      "$type": "dimension",
+      "$value": "64px",
+      "$description": "Page-level margins on wide layouts.",
+      "$extensions": {
+        "lucent.sourceName": "space-10"
+      }
+    }
+  },
+  "radius": {
+    "radius-xs": {
+      "$type": "dimension",
+      "$value": "4px",
+      "$description": "Concept A: switches, chips, tick marks — brutalist, barely-rounded.",
+      "$extensions": {
+        "lucent.sourceName": "radius-xs"
+      }
+    },
+    "radius-sm": {
+      "$type": "dimension",
+      "$value": "8px",
+      "$description": "Concept A: buttons and inputs.",
+      "$extensions": {
+        "lucent.sourceName": "radius-sm"
+      }
+    },
+    "radius-md": {
+      "$type": "dimension",
+      "$value": "14px",
+      "$description": "Concept B: default card and button radius.",
+      "$extensions": {
+        "lucent.sourceName": "radius-md"
+      }
+    },
+    "radius-lg": {
+      "$type": "dimension",
+      "$value": "24px",
+      "$description": "Concept B/C: large panels and modals.",
+      "$extensions": {
+        "lucent.sourceName": "radius-lg"
+      }
+    },
+    "radius-xl": {
+      "$type": "dimension",
+      "$value": "32px",
+      "$description": "Concept C: hero panels and console shells.",
+      "$extensions": {
+        "lucent.sourceName": "radius-xl"
+      }
+    },
+    "radius-full": {
+      "$type": "dimension",
+      "$value": "999px",
+      "$description": "Pills, toggles, dials and Concept C's disc motifs.",
+      "$extensions": {
+        "lucent.sourceName": "radius-full"
+      }
+    },
+    "radius-squircle": {
+      "$type": "dimension",
+      "$value": "32%",
+      "$description": "Percentage-based superellipse radius for app-icon-scale marks — the panel case study's radius geometry swatch.",
+      "$extensions": {
+        "lucent.sourceName": "radius-squircle"
+      }
+    },
+    "radius-control": {
+      "$type": "dimension",
+      "$value": "var(--radius-md)",
+      "$description": "Alias of radius-md for neumorphic controls.",
+      "$extensions": {
+        "lucent.sourceName": "radius-control"
+      }
+    },
+    "radius-card": {
+      "$type": "dimension",
+      "$value": "var(--radius-lg)",
+      "$description": "Alias of radius-lg for neumorphic cards.",
+      "$extensions": {
+        "lucent.sourceName": "radius-card"
+      }
+    },
+    "radius-well": {
+      "$type": "dimension",
+      "$value": "var(--radius-md)",
+      "$description": "Alias of radius-md for recessed wells and fields.",
+      "$extensions": {
+        "lucent.sourceName": "radius-well"
+      }
+    },
+    "radius-pill": {
+      "$type": "dimension",
+      "$value": "var(--radius-full)",
+      "$description": "Alias of radius-full for pills and toggles.",
+      "$extensions": {
+        "lucent.sourceName": "radius-pill"
+      }
+    }
+  },
+  "blur": {
+    "blur-sm": {
+      "$type": "dimension",
+      "$value": "8px",
+      "$description": "backdrop-filter on small chips and tags.",
+      "$extensions": {
+        "lucent.sourceName": "blur-sm"
+      }
+    },
+    "blur-md": {
+      "$type": "dimension",
+      "$value": "16px",
+      "$description": "backdrop-filter on standard glass panels and cards.",
+      "$extensions": {
+        "lucent.sourceName": "blur-md"
+      }
+    },
+    "blur-lg": {
+      "$type": "dimension",
+      "$value": "28px",
+      "$description": "backdrop-filter on full-bleed glass surfaces and modals.",
+      "$extensions": {
+        "lucent.sourceName": "blur-lg"
+      }
+    }
+  },
+  "opacity": {
+    "opacity-glass-subtle": {
+      "$type": "number",
+      "$value": 0.45,
+      "$description": "Decorative glow washes and background gradients behind glass.",
+      "$extensions": {
+        "lucent.sourceName": "opacity-glass-subtle"
+      }
+    },
+    "opacity-glass-strong": {
+      "$type": "number",
+      "$value": 0.72,
+      "$description": "Glass fills that must read as nearly-solid.",
+      "$extensions": {
+        "lucent.sourceName": "opacity-glass-strong"
+      }
+    },
+    "opacity-scrim": {
+      "$type": "number",
+      "$value": 0.5,
+      "$description": "Backdrop dimming behind an elevated modal.",
+      "$extensions": {
+        "lucent.sourceName": "opacity-scrim"
+      }
+    }
+  }
+}

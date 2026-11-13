@@ -1,0 +1,122 @@
+{
+  "font": {
+    "sans": {
+      "$type": "fontFamily",
+      "$value": [
+        "Space Grotesk",
+        "system-ui",
+        "sans-serif"
+      ]
+    },
+    "mono": {
+      "$type": "fontFamily",
+      "$value": [
+        "Space Mono",
+        "ui-monospace",
+        "SFMono-Regular",
+        "monospace"
+      ]
+    }
+  },
+  "typography": {
+    "display": {
+      "display-xl": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.sans}",
+          "fontSize": "4rem",
+          "fontWeight": 700,
+          "lineHeight": "4.25rem"
+        },
+        "$description": "The system name on the cover and full-bleed hero moments only."
+      },
+      "display-lg": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.sans}",
+          "fontSize": "2.5rem",
+          "fontWeight": 700,
+          "lineHeight": "2.875rem"
+        },
+        "$description": "Section-opening numerals and large readouts (Concept C's console displays)."
+      }
+    },
+    "heading": {
+      "heading-lg": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.sans}",
+          "fontSize": "1.75rem",
+          "fontWeight": 600,
+          "lineHeight": "2.125rem"
+        },
+        "$description": "Page and panel titles."
+      },
+      "heading-md": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.sans}",
+          "fontSize": "1.25rem",
+          "fontWeight": 600,
+          "lineHeight": "1.625rem"
+        },
+        "$description": "Card and section titles."
+      },
+      "heading-sm": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.sans}",
+          "fontSize": "1rem",
+          "fontWeight": 600,
+          "lineHeight": "1.375rem"
+        },
+        "$description": "Control cluster labels and list-row titles."
+      }
+    },
+    "text": {
+      "body": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.sans}",
+          "fontSize": "0.9375rem",
+          "fontWeight": 400,
+          "lineHeight": "1.375rem"
+        },
+        "$description": "Default body copy."
+      },
+      "body-sm": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.sans}",
+          "fontSize": "0.8125rem",
+          "fontWeight": 400,
+          "lineHeight": "1.125rem"
+        },
+        "$description": "Captions, helper text, secondary list content."
+      }
+    },
+    "label": {
+      "label-mono": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.mono}",
+          "fontSize": "0.6875rem",
+          "fontWeight": 500,
+          "lineHeight": "0.875rem",
+          "letterSpacing": "0.04em"
+        },
+        "$description": "Instrument-panel tick labels and tags. Set uppercase in CSS, not stored in the token."
+      },
+      "data-mono": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.mono}",
+          "fontSize": "0.8125rem",
+          "fontWeight": 400,
+          "lineHeight": "1.125rem"
+        },
+        "$description": "Numeric readouts, coordinates, version stamps."
+      }
+    }
+  }
+}

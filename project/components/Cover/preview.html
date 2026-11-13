@@ -1,0 +1,69 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Lucent</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Space+Mono:wght@400&display=swap">
+<style>
+  html, body { margin: 0; height: 100%; }
+  body { background: var(--surface-base); color: var(--ink); font-family: var(--font-sans); overflow: hidden; }
+  .cover { position: relative; height: 288px; overflow: hidden; }
+  .art { position: absolute; top: 0; left: 480px; width: 480px; height: 288px; overflow: hidden; }
+  .art svg { display: block; width: 640px; height: 288px; }
+  .blk-a { fill: var(--indigo-500); rx: var(--radius-xs); }
+  .blk-b { fill: var(--cyan-500); rx: var(--radius-md); }
+  .blk-c { fill: var(--violet-500); rx: var(--radius-full); }
+  .blk-tint { fill: var(--ink-300); rx: var(--radius-sm); }
+  .tile { fill: var(--ink-300); rx: var(--radius-xs); }
+  .tile-cut { fill: var(--surface-base); rx: var(--radius-xs); }
+  .words { position: absolute; left: var(--space-6); right: var(--space-6); bottom: var(--space-6); max-width: 440px; }
+  .name { margin: 0; font-size: 112px; line-height: .9; font-weight: 700; letter-spacing: -0.01em; color: var(--ink); }
+  .tag { margin: var(--space-2) 0 0; font-size: 14px; line-height: 20px; color: var(--ink-muted); }
+</style>
+</head>
+<body>
+<div class="cover">
+<div class="art" aria-hidden="true">
+<svg viewBox="0 0 640 288" width="640" height="288">
+<!--
+  blocks      indigo-500 112×232 (radius-xs, sharp — Instrument) bleeding off the top, first in the box · cyan-500 112×176 (radius-md — Atrium) · violet-500 152×152 disc (radius-full clamps a square to a circle — Aurora Console) · ink-300 56×56 relief block (radius-sm), bleeding off the right edge — ≈37% of 640×288
+  arrangement three unequal blocks in one row, corner treatment stepping sharp→round→disc left to right so the row itself reads as the brutalist-to-maximalist spread the system documents; the relief block breaks off the trailing edge
+  pattern     a modular tile grid (radius-xs, space-3 pitch) scattered above and below the row, two tiles merged two-wide, two more cut into the disc in the ground color — the Bauhaus grid all three concepts share, perforating the loudest block
+  scales      block gutters at space-4 (16); tile size space-2 (8), merged tiles space-4 wide; corners radius-xs/radius-md/radius-full/radius-sm
+-->
+<rect class="blk-a" x="32" y="-16" width="112" height="232" rx="4"/>
+<rect class="blk-b" x="160" y="56" width="112" height="176" rx="14"/>
+<rect class="blk-c" x="296" y="68" width="152" height="152" rx="76"/>
+<rect class="blk-tint" x="472" y="180" width="56" height="56" rx="8"/>
+
+<rect class="tile" x="48" y="232" width="8" height="8" rx="4"/>
+<rect class="tile" x="64" y="244" width="8" height="8" rx="4"/>
+<rect class="tile" x="56" y="220" width="8" height="8" rx="4"/>
+<rect class="tile" x="64" y="208" width="16" height="8" rx="4"/>
+<rect class="tile" x="176" y="240" width="8" height="8" rx="4"/>
+<rect class="tile" x="192" y="252" width="8" height="8" rx="4"/>
+<rect class="tile" x="184" y="20" width="8" height="8" rx="4"/>
+<rect class="tile" x="200" y="8" width="8" height="8" rx="4"/>
+<rect class="tile" x="216" y="32" width="8" height="8" rx="4"/>
+<rect class="tile" x="320" y="240" width="8" height="8" rx="4"/>
+<rect class="tile" x="336" y="228" width="8" height="8" rx="4"/>
+<rect class="tile" x="336" y="212" width="16" height="8" rx="4"/>
+<rect class="tile" x="352" y="244" width="8" height="8" rx="4"/>
+<rect class="tile" x="400" y="16" width="8" height="8" rx="4"/>
+<rect class="tile" x="416" y="28" width="8" height="8" rx="4"/>
+<rect class="tile" x="432" y="8" width="8" height="8" rx="4"/>
+<rect class="tile" x="456" y="232" width="8" height="8" rx="4"/>
+<rect class="tile" x="468" y="244" width="8" height="8" rx="4"/>
+<rect class="tile-cut" x="340" y="120" width="10" height="10" rx="4"/>
+<rect class="tile-cut" x="362" y="142" width="8" height="8" rx="4"/>
+</svg>
+</div>
+<div class="words">
+<h1 class="name">Lucent</h1>
+<p class="tag">Where brutalist glass meets opulent glow.</p>
+</div>
+</div>
+</body>
+</html>

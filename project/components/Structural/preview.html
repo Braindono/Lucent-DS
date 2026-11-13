@@ -1,0 +1,249 @@
+<!-- @dsCard group="Structural" height=900 width=920 subtitle="Site chrome — header/nav, footer, project card — on Primary Direction tokens, first components to use the Lucent icon set" -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Lucent — Structural</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap">
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    background: var(--surface-base);
+    color: var(--ink);
+    font-family: var(--font-sans);
+    padding: var(--space-6);
+  }
+  svg.icon { width: 20px; height: 20px; stroke: currentColor; fill: none; stroke-width: 1.5; flex: none; display: block; }
+
+  /* ---------- Header / nav ---------- */
+  /* Jakob's Law: logo left, primary nav center-left, utility actions right — the pattern
+     visitors already know from every other site, so nothing here has to be learned. */
+  .lc-s-header {
+    display: flex; align-items: center; gap: var(--space-5);
+    padding: var(--space-3) var(--space-4);
+    background: var(--glass-surface); backdrop-filter: blur(var(--blur-sm)); -webkit-backdrop-filter: blur(var(--blur-sm));
+    
+    border-radius: var(--radius-sm);
+    margin-bottom: var(--space-6);
+  }
+  .lc-s-logo { display: flex; align-items: center; gap: var(--space-2); color: var(--ink); text-decoration: none; flex: none; }
+  .lc-s-logo:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; border-radius: var(--radius-xs); }
+  .lc-s-logo .dot { width: 9px; height: 9px; border-radius: var(--radius-full); background: var(--accent-primary); }
+  .lc-s-logo span.label-mono { letter-spacing: 0.08em; }
+
+  /* Hick's Law: five primary items, not fifteen — a nav people can scan, not read */
+  .lc-s-nav { display: flex; align-items: center; gap: var(--space-2); flex: 1; }
+  .lc-s-nav a {
+    color: var(--ink-muted); text-decoration: none;
+    padding: var(--space-2) var(--space-3); border-radius: var(--radius-xs);
+    /* Fitts's Law: 44px min tap target height even though the label is small —
+       the link's own box, not just its text, carries the hit area */
+    min-height: 44px; display: inline-flex; align-items: center;
+  }
+  .lc-s-nav a:hover { color: var(--ink); background: var(--surface-sunken); }
+  .lc-s-nav a:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+  .lc-s-nav a.is-active { color: var(--ink); font-weight: 600; position: relative; }
+  /* Von Restorff: the one item that differs (current page) is the only one that gets weight --
+     plus a visible dot, since weight alone is a weak signal at body-sm size */
+  .lc-s-nav a.is-active::after {
+    content: ""; position: absolute; left: var(--space-3); right: var(--space-3); bottom: 2px;
+    height: 2px; border-radius: var(--radius-full); background: var(--accent-primary);
+  }
+
+  .lc-s-actions { display: flex; align-items: center; gap: var(--space-2); flex: none; }
+  .lc-s-iconbtn {
+    appearance: none; border: none; cursor: pointer; background: transparent; color: var(--ink-muted);
+    width: 44px; height: 44px; border-radius: var(--radius-xs);
+    display: flex; align-items: center; justify-content: center;
+  }
+  .lc-s-iconbtn:hover { background: var(--surface-sunken); color: var(--ink); }
+  .lc-s-iconbtn:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+  .lc-s-cta {
+    appearance: none; border: none; cursor: pointer;
+    padding: var(--space-2) var(--space-4); min-height: 44px;
+    border-radius: var(--radius-xs); background: var(--accent-primary); color: var(--accent-primary-on);
+    display: inline-flex; align-items: center; gap: var(--space-2); white-space: nowrap;
+  }
+  .lc-s-cta:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+
+  /* mobile: nav collapses behind a menu button under the Fitts-sized icon button pattern above */
+  .lc-s-mobile-toggle { display: none; }
+  @media (max-width: 640px) {
+    .lc-s-nav { display: none; }
+    .lc-s-mobile-toggle { display: flex; }
+  }
+
+  /* ---------- Project card grid ---------- */
+  .lc-s-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-5);
+    margin-bottom: var(--space-6);
+  }
+  @media (max-width: 640px) { .lc-s-grid { grid-template-columns: 1fr; } }
+
+  /* the whole card is the click target (Fitts's Law again — don't make people aim for a small
+     "read more" link when the card's real estate can all be the target), with a visible
+     hover/focus lift so the affordance reads before the click */
+  .lc-s-card {
+    display: block; text-decoration: none; color: inherit;
+    background: var(--surface-raised); box-shadow: var(--shadow-raised-md);
+    border-radius: var(--radius-sm); overflow: hidden;
+    transition: box-shadow 150ms ease, transform 150ms ease;
+  }
+  .lc-s-card:hover, .lc-s-card:focus-visible { box-shadow: var(--shadow-raised-hover); transform: translateY(-2px); }
+  .lc-s-card:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+  .lc-s-card-media {
+    height: 120px;
+    background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+    opacity: 0.85;
+  }
+  .lc-s-card-body { padding: var(--space-4); }
+  .lc-s-card-tags { display: flex; gap: var(--space-2); margin-bottom: var(--space-3); }
+  .lc-s-card-tag {
+    display: inline-flex; align-items: center; gap: var(--space-1);
+    padding: 2px var(--space-2); border-radius: var(--radius-full);
+    background: var(--surface-sunken); color: var(--ink-muted);
+  }
+  .lc-s-card-tag .dot { width: 6px; height: 6px; border-radius: var(--radius-full); background: var(--accent-tertiary); }
+  .lc-s-card h3 { margin: 0 0 var(--space-2); }
+  .lc-s-card p { margin: 0 0 var(--space-3); color: var(--ink-muted); }
+  .lc-s-card-cta { display: inline-flex; align-items: center; gap: var(--space-2); color: var(--accent-primary); font-weight: 600; }
+
+  /* ---------- Footer ---------- */
+  /* Miller's Law: each column stays under ~5 links so it reads as one chunk, not a scan-and-count task */
+  .lc-s-footer {
+    padding-top: var(--space-6); border-top: 1px solid var(--ink-100);
+    display: flex; justify-content: space-between; gap: var(--space-6); flex-wrap: wrap;
+  }
+  .lc-s-footer-col h4 { margin: 0 0 var(--space-3); color: var(--ink-muted); }
+  .lc-s-footer-col ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: var(--space-2); }
+  .lc-s-footer-col a {
+    color: var(--ink); text-decoration: none;
+    min-height: 44px; display: inline-flex; align-items: center;
+  }
+  .lc-s-footer-col a:hover { color: var(--accent-primary); }
+  .lc-s-footer-col a:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+  .lc-s-footer-brand { max-width: 240px; }
+  .lc-s-social { display: flex; gap: var(--space-2); margin-top: var(--space-4); }
+  .lc-s-social a {
+    width: 44px; height: 44px; border-radius: var(--radius-xs);
+    display: flex; align-items: center; justify-content: center; color: var(--ink-muted);
+  }
+  .lc-s-social a:hover { background: var(--surface-sunken); color: var(--ink); }
+  .lc-s-social a:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+  .lc-s-legal {
+    margin-top: var(--space-6); padding-top: var(--space-4); border-top: 1px solid var(--ink-100);
+    display: flex; justify-content: space-between; gap: var(--space-4); flex-wrap: wrap;
+  }
+
+/* restyle: 44px touch target for logo link */
+.lc-s-logo { min-height: 44px; }
+</style>
+</head>
+<body>
+
+  <!-- icon symbols — sourced verbatim from project/icons/icon-sprite.svg, inlined here so this
+       preview stays self-contained the way every other component preview is -->
+  <svg style="display:none" aria-hidden="true">
+    <symbol id="s-menu" viewBox="0 0 24 24" stroke-width="1.5" fill="none"><path d="M3 5H21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 12H21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 19H21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="s-search" viewBox="0 0 24 24" stroke-width="1.5" fill="none"><path d="M17 17L21 21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 11C3 15.4183 6.58172 19 11 19C13.213 19 15.2161 18.1015 16.6644 16.6493C18.1077 15.2022 19 13.2053 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="s-arrow-up-right" viewBox="0 0 24 24" stroke-width="1.5" fill="none"><path d="M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="s-arrow-right" viewBox="0 0 24 24" stroke-width="1.5" fill="none"><path d="M3 12L21 12M21 12L12.5 3.5M21 12L12.5 20.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="s-linkedin" viewBox="0 0 24 24" stroke-width="1.5" fill="none"><path d="M21 8V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16V8C3 5.23858 5.23858 3 8 3H16C18.7614 3 21 5.23858 21 8Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M7 17V13.5V10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M11 17V13.75M11 10V13.75M11 13.75C11 10 17 10 17 13.75V17" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M7 7.01L7.01 6.99889" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="s-github" viewBox="0 0 24 24" stroke-width="1.5" fill="none"><path d="M16 22.0268V19.1568C16.0375 18.68 15.9731 18.2006 15.811 17.7506C15.6489 17.3006 15.3929 16.8902 15.06 16.5468C18.2 16.1968 21.5 15.0068 21.5 9.54679C21.4997 8.15062 20.9627 6.80799 20 5.79679C20.4558 4.5753 20.4236 3.22514 19.91 2.02679C19.91 2.02679 18.73 1.67679 16 3.50679C13.708 2.88561 11.292 2.88561 8.99999 3.50679C6.26999 1.67679 5.08999 2.02679 5.08999 2.02679C4.57636 3.22514 4.54413 4.5753 4.99999 5.79679C4.03011 6.81549 3.49251 8.17026 3.49999 9.57679C3.49999 14.9968 6.79998 16.1868 9.93998 16.5768C9.61098 16.9168 9.35725 17.3222 9.19529 17.7667C9.03334 18.2112 8.96679 18.6849 8.99999 19.1568V22.0268" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 20.0267C6 20.9999 3.5 20.0267 2 17.0267" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="s-twitter" viewBox="0 0 24 24" stroke-width="1.5" fill="none"><path d="M23 3.01006C23 3.01006 20.9821 4.20217 19.86 4.54006C19.2577 3.84757 18.4573 3.35675 17.567 3.13398C16.6767 2.91122 15.7395 2.96725 14.8821 3.29451C14.0247 3.62177 13.2884 4.20446 12.773 4.96377C12.2575 5.72309 11.9877 6.62239 12 7.54006V8.54006C10.2426 8.58562 8.50127 8.19587 6.93101 7.4055C5.36074 6.61513 4.01032 5.44869 3 4.01006C3 4.01006 -1 13.0101 8 17.0101C5.94053 18.408 3.48716 19.109 1 19.0101C10 24.0101 21 19.0101 21 7.51006C20.9991 7.23151 20.9723 6.95365 20.92 6.68006C21.9406 5.67355 23 3.01006 23 3.01006Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="s-mail" viewBox="0 0 24 24" stroke-width="1.5" fill="none"><path d="M7 9L12 12.5L17 9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 17V7C2 5.89543 2.89543 5 4 5H20C21.1046 5 22 5.89543 22 7V17C22 18.1046 21.1046 19 20 19H4C2.89543 19 2 18.1046 2 17Z" stroke="currentColor" stroke-width="1.5"/></symbol>
+  </svg>
+
+  <header class="lc-s-header" role="banner">
+    <a class="lc-s-logo" href="#">
+      <span class="dot" aria-hidden="true"></span>
+      <span class="label-mono">LUCENT</span>
+    </a>
+    <nav class="lc-s-nav" aria-label="Primary">
+      <a href="#" class="is-active body-sm">Overview</a>
+      <a href="#" class="body-sm">Components</a>
+      <a href="#" class="body-sm">Tokens</a>
+      <a href="#" class="body-sm">Docs</a>
+    </nav>
+    <div class="lc-s-actions">
+      <button class="lc-s-iconbtn" type="button" aria-label="Search"><svg class="icon"><use href="#s-search"/></svg></button>
+      <button class="lc-s-iconbtn lc-s-mobile-toggle" type="button" aria-label="Open menu" aria-expanded="false"><svg class="icon"><use href="#s-menu"/></svg></button>
+      <button class="lc-s-cta body-sm" type="button">Get started<svg class="icon" style="width:16px;height:16px;"><use href="#s-arrow-right"/></svg></button>
+    </div>
+  </header>
+
+  <div class="lc-s-grid">
+    <a class="lc-s-card" href="#">
+      <div class="lc-s-card-media" aria-hidden="true"></div>
+      <div class="lc-s-card-body">
+        <div class="lc-s-card-tags"><span class="lc-s-card-tag label-mono"><span class="dot"></span>CASE STUDY</span></div>
+        <h3 class="heading-sm">Panel</h3>
+        <p class="body-sm">A style guide rebuilt entirely on Lucent tokens — proof the system holds up outside its own concepts.</p>
+        <span class="lc-s-card-cta body-sm">Read case study<svg class="icon" style="width:16px;height:16px;"><use href="#s-arrow-up-right"/></svg></span>
+      </div>
+    </a>
+    <a class="lc-s-card" href="#">
+      <div class="lc-s-card-media" aria-hidden="true"></div>
+      <div class="lc-s-card-body">
+        <div class="lc-s-card-tags"><span class="lc-s-card-tag label-mono"><span class="dot"></span>CONCEPT</span></div>
+        <h3 class="heading-sm">Aurora Console</h3>
+        <p class="body-sm">The spatial-panel exploration — pills, dials and circular readouts on the widest end of the radius scale.</p>
+        <span class="lc-s-card-cta body-sm">Read case study<svg class="icon" style="width:16px;height:16px;"><use href="#s-arrow-up-right"/></svg></span>
+      </div>
+    </a>
+    <a class="lc-s-card" href="#">
+      <div class="lc-s-card-media" aria-hidden="true"></div>
+      <div class="lc-s-card-body">
+        <div class="lc-s-card-tags"><span class="lc-s-card-tag label-mono"><span class="dot"></span>DASHBOARD</span></div>
+        <h3 class="heading-sm">Aurora Console dashboard</h3>
+        <p class="body-sm">A working board built on the same three-hue hierarchy — status and viz tokens under real content.</p>
+        <span class="lc-s-card-cta body-sm">Read case study<svg class="icon" style="width:16px;height:16px;"><use href="#s-arrow-up-right"/></svg></span>
+      </div>
+    </a>
+  </div>
+
+  <footer class="lc-s-footer" role="contentinfo">
+    <div class="lc-s-footer-col lc-s-footer-brand">
+      <div class="lc-s-logo" style="margin-bottom:var(--space-3);"><span class="dot" aria-hidden="true"></span><span class="label-mono">LUCENT</span></div>
+      <p class="body-sm" style="color:var(--ink-muted);margin:0;">A neumorphic + glass hybrid design system, spent through one locked indigo/violet/cyan hierarchy.</p>
+      <div class="lc-s-social">
+        <a href="#" aria-label="LinkedIn"><svg class="icon"><use href="#s-linkedin"/></svg></a>
+        <a href="#" aria-label="GitHub"><svg class="icon"><use href="#s-github"/></svg></a>
+        <a href="#" aria-label="Twitter"><svg class="icon"><use href="#s-twitter"/></svg></a>
+        <a href="#" aria-label="Email"><svg class="icon"><use href="#s-mail"/></svg></a>
+      </div>
+    </div>
+    <div class="lc-s-footer-col">
+      <h4 class="label-mono">PRODUCT</h4>
+      <ul class="body-sm">
+        <li><a href="#">Components</a></li>
+        <li><a href="#">Tokens</a></li>
+        <li><a href="#">Icons</a></li>
+        <li><a href="#">Changelog</a></li>
+      </ul>
+    </div>
+    <div class="lc-s-footer-col">
+      <h4 class="label-mono">RESOURCES</h4>
+      <ul class="body-sm">
+        <li><a href="#">Documentation</a></li>
+        <li><a href="#">Design rules</a></li>
+        <li><a href="#">Accessibility</a></li>
+      </ul>
+    </div>
+    <div class="lc-s-footer-col">
+      <h4 class="label-mono">COMPANY</h4>
+      <ul class="body-sm">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+  <div class="lc-s-legal body-sm" style="color:var(--ink-muted);">
+    <span>© 2026 Lucent</span>
+    <span class="data-mono">v0.1 · Primary Direction</span>
+  </div>
+
+</body>
+</html>

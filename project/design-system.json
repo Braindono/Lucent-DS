@@ -1,0 +1,67 @@
+{
+  "v": 3,
+  "assetGroups": {},
+  "blobs": {},
+  "createdOnFiles": {
+    "at": "2026-09-22T07:56:46Z",
+    "v": 1
+  },
+  "docs": {
+    "readme": "project/README.md",
+    "sections": []
+  },
+  "groups": [],
+  "lastChange": {
+    "at": "2026-10-26T21:57:50Z",
+    "note": "Lucent 0.5.0"
+  },
+  "layout": "files",
+  "libraries": [],
+  "namespace": "Lucent",
+  "sections": {},
+  "title": "Lucent",
+  "iconSets": {
+    "lucent-icons": {
+      "name": "Lucent icon set",
+      "count": 1383,
+      "sprite": "project/icons/icon-sprite.svg",
+      "manifest": "project/icons/manifest.json",
+      "index": "project/icons/index.txt",
+      "readme": "project/icons/README.md",
+      "ink": "currentColor (set one ink token per icon on the svg/use wrapper)",
+      "viewBox": "0 0 24 24",
+      "strokeWidth": 1.5,
+      "source": "Original project asset; no third-party library",
+      "files": {
+        "icon-sprite.svg": {
+          "name": "icon-sprite.svg",
+          "path": "project/icons/icon-sprite.svg",
+          "sha256": "7bf1d2b360461f287f495cf38f365d072832f276d192e8b54d3763d2bc1c4c55",
+          "size": 997911,
+          "type": "image/svg+xml"
+        },
+        "manifest.json": {
+          "name": "manifest.json",
+          "path": "project/icons/manifest.json",
+          "sha256": "0372ae9523a177ad45958053a55b2a382333d0bf9a6b93652d0360cb76fe55b2",
+          "size": 131875,
+          "type": "application/json"
+        },
+        "index.txt": {
+          "name": "index.txt",
+          "path": "project/icons/index.txt",
+          "sha256": "79123d46660a44c66cb85f7889f59343055873336e09f88199a081a0fc8c915c",
+          "size": 36147,
+          "type": "text/plain"
+        },
+        "README.md": {
+          "name": "README.md",
+          "path": "project/icons/README.md",
+          "sha256": "8173c8d24590a5f54e361449620678bcfc44d8990c7096cba445a16ebb3f8765",
+          "size": 3425,
+          "type": "text/plain"
+        }
+      }
+    }
+  }
+}
