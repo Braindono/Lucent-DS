@@ -2,6 +2,10 @@
 <!doctype html>
 <html lang="en">
 <head>
+<!-- standalone use: load the generated tokens and the bundled fonts -->
+<link rel="stylesheet" href="../../../export/tokens.css">
+<style>@font-face{font-family:"Space Grotesk";font-weight:400;src:url("../../fonts/SpaceGrotesk-Regular.woff2") format("woff2")}@font-face{font-family:"Space Grotesk";font-weight:500;src:url("../../fonts/SpaceGrotesk-Medium.woff2") format("woff2")}@font-face{font-family:"Space Grotesk";font-weight:600;src:url("../../fonts/SpaceGrotesk-SemiBold.woff2") format("woff2")}@font-face{font-family:"Space Grotesk";font-weight:700;src:url("../../fonts/SpaceGrotesk-Bold.woff2") format("woff2")}@font-face{font-family:"Space Mono";font-weight:400;src:url("../../fonts/SpaceMono-Regular.woff2") format("woff2")}@font-face{font-family:"Space Mono";font-weight:700;src:url("../../fonts/SpaceMono-Bold.woff2") format("woff2")}</style>
+
 <meta charset="utf-8">
 <title>Lucent — Dashboard: Aurora Console</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -108,8 +112,9 @@
 
   .lc-d-gauge { display: flex; flex-direction: column; align-items: center; text-align: center; height: 100%; justify-content: center; }
   .lc-d-gauge svg { overflow: visible; }
-  .lc-d-gauge .figure { margin: calc(-1 * var(--space-8)) 0 0; }
-  .lc-d-gauge .cap { margin: var(--space-2) 0 0; color: var(--ink-muted); }
+  /* the figure sits inside the ring; the caption starts 8px below the ring so it never crosses the arc ends */
+  .lc-d-gauge .figure { margin: -88px 0 0; height: 40px; line-height: 40px; }
+  .lc-d-gauge .cap { margin: 56px 0 0; color: var(--ink-muted); }
   .lc-d-gauge .band { display: inline-flex; align-items: center; gap: 6px; margin-top: var(--space-3); padding: var(--space-1) var(--space-3); border-radius: var(--radius-full); background: color-mix(in srgb, var(--status-warning) 16%, transparent); color: var(--status-warning); }
   .lc-d-gauge .band .dot { width: 6px; height: 6px; border-radius: var(--radius-full); background: var(--status-warning); }
 
