@@ -64,4 +64,4 @@ python3 project/scripts/test_regen_tokens.py     # pipeline tests
 ## Notes
 
 - A case study referenced by the `panel-*` tokens is not part of this release. Those tokens remain in the token set.
-- No licence has been chosen for the system itself yet. Until one is added, all rights are reserved. The bundled fonts keep their own licence.
+- Licensed under the Apache License 2.0; see LICENSE. The bundled fonts keep their own licence (SIL Open Font License 1.1).
