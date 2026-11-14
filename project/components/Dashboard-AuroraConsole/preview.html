@@ -113,7 +113,7 @@
   .lc-d-gauge { display: flex; flex-direction: column; align-items: center; text-align: center; height: 100%; justify-content: center; }
   .lc-d-gauge svg { overflow: visible; }
   /* the figure sits inside the ring; the caption starts 8px below the ring so it never crosses the arc ends */
-  .lc-d-gauge .figure { margin: -88px 0 0; height: 40px; line-height: 40px; }
+  .lc-d-gauge .figure { margin: -88px 0 0; height: 40px; line-height: 40px; font-size: 1.75rem; }
   .lc-d-gauge .cap { margin: 56px 0 0; color: var(--ink-muted); }
   .lc-d-gauge .band { display: inline-flex; align-items: center; gap: 6px; margin-top: var(--space-3); padding: var(--space-1) var(--space-3); border-radius: var(--radius-full); background: color-mix(in srgb, var(--status-warning) 16%, transparent); color: var(--status-warning); }
   .lc-d-gauge .band .dot { width: 6px; height: 6px; border-radius: var(--radius-full); background: var(--status-warning); }
@@ -271,7 +271,7 @@
             <path d="M40.5,139.5 A70,70 0 1 1 157.8,72.59" fill="none" stroke="var(--status-warning)" stroke-width="14" stroke-linecap="round" style="filter: drop-shadow(0 0 10px var(--status-warning));"/>
           </svg>
           <p class="display-lg data-mono figure">78%</p>
-          <p class="cap body-sm">42 of 54 nodes reserved</p>
+          <p class="cap body-sm">42 of 54<br>nodes reserved</p>
           <span class="band label-mono"><span class="dot"></span>WARNING</span>
         </div>
       </div>
